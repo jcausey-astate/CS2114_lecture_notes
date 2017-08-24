@@ -203,19 +203,15 @@ How do you break down a new and difficult problem to find a solution?
     <ul><li> Here are your _base condition(s)_.</li></ul>
 </ul>
 
----
+---?image=assets/images/Recursion/Towers.png
 
 ## Towers of Hanoi
-
----?image=assets/images/Recursion/Towers.png
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
----
+---?image=/images/Recursion/Towers.png
 
 ## Towers of Hanoi
-
----?image=/images/Recursion/Towers.png
 
 <div style="background-color: rgba(0,0,0,0.4); color: white;">
 <p>
@@ -231,11 +227,9 @@ How do you break down a new and difficult problem to find a solution?
 </p>
 </div>
 
----
+---?image=/images/Recursion/Towers.png
 
 ## Towers of Hanoi
-
----?image=/images/Recursion/Towers.png
 
 <div style="background-color: rgba(0,0,0,0.4); color: white;">
 <p>

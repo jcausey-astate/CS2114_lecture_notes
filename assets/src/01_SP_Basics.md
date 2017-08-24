@@ -261,6 +261,7 @@ int main()
 ```
 @[6]
 
+<!-- .element: data-fragment-index="3" -->
 * This line terminates the program by causing the `main()` function to return the value `0` to the operating system.
     - No code following this line would ever be executed; this means that the `return 0;` line will always be the last line in `main()`.
 * The operating system considers zero to be an indication that the program ran normally.  

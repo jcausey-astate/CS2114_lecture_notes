@@ -1,14 +1,13 @@
 |   |   |
 |---|---|
-| [00_introduction](?p=00_introduction) | [09_arrays](?p=09_arrays) |
-| [00b_why_cpp](?p=00b_why_cpp) | [09b_parallel_and_multi_dim_arrays](?p=09b_parallel_and_multi_dim_arrays) |
-| [01_sp_basics](?p=01_sp_basics) | [10_searching_sorting](?p=10_searching_sorting) |
-| [02_variables_operators_errors](?p=02_variables_operators_errors) | [11_c-strings](?p=11_c-strings) |
-| [03_input_and_output](?p=03_input_and_output) | [12_pointers](?p=12_pointers) |
-| [04_formatted_output_getline_cmath](?p=04_formatted_output_getline_cmath) | [13_dynamic_memory](?p=13_dynamic_memory) |
-| [05_selection](?p=05_selection) | [14_recursion](?p=14_recursion) |
-| [05b_epsilon_comparison](?p=05b_epsilon_comparison) | [15_structures](?p=15_structures) |
-| [06_repetition](?p=06_repetition) | [16_header_files](?p=16_header_files) |
-| [07_functions_value_parameters](?p=07_functions_value_parameters) | [17_operator_overloading](?p=17_operator_overloading) |
-| [08_functions_reference_parameters](?p=08_functions_reference_parameters) | [18_templates](?p=18_templates) |
+| [00_why_cpp](?p=00_why_cpp) | [09_arrays](?p=09_arrays) |
+| [01_sp_basics](?p=01_sp_basics) | [09b_parallel_and_multi_dim_arrays](?p=09b_parallel_and_multi_dim_arrays) |
+| [02_variables_operators_errors](?p=02_variables_operators_errors) | [10_searching_sorting](?p=10_searching_sorting) |
+| [03_input_and_output](?p=03_input_and_output) | [11_c-strings](?p=11_c-strings) |
+| [04_formatted_output_getline_cmath](?p=04_formatted_output_getline_cmath) | [12_pointers](?p=12_pointers) |
+| [05_selection](?p=05_selection) | [13_dynamic_memory](?p=13_dynamic_memory) |
+| [05b_epsilon_comparison](?p=05b_epsilon_comparison) | [14_recursion](?p=14_recursion) |
+| [06_repetition](?p=06_repetition) | [15_structures](?p=15_structures) |
+| [07_functions_value_parameters](?p=07_functions_value_parameters) | [16_header_files](?p=16_header_files) |
+| [08_functions_reference_parameters](?p=08_functions_reference_parameters) | [17_operator_overloading](?p=17_operator_overloading) |
 

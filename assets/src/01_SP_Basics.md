@@ -128,8 +128,7 @@ int main(){
 ``` cpp
 #include <iostream>
 
-int main()
-{
+int main(){
     std::cout << "Hello, World!\n";
     return 0;
 }
@@ -144,15 +143,7 @@ Now, we will take a look at the parts of the program, and see what each part doe
 
 ``` cpp
 #include <iostream>
-
-int main()
-{
-    std::cout << "Hello, World!\n";
-    return 0;
-}
-
 ```
-@[1]
 
 * This line is called a _preprocessor directive_.  
 * It communicates with a phase of the C++ compiler called the _preprocessor_, telling it to include code from a file named _"iostream"_, which is a C++ library.  
@@ -164,16 +155,8 @@ int main()
 ## Program Parts
 
 ``` cpp
-#include <iostream>
-
 int main()
-{
-    std::cout << "Hello, World!\n";
-    return 0;
-}
-
 ```
-@[3]
 
 * This line is called a _function header_.
 * It begins the definition of a function called "main".
@@ -186,17 +169,11 @@ int main()
 
 ## Program Parts
 
-``` cpp
-#include <iostream>
-
-int main()
+```cpp
 {
-    std::cout << "Hello, World!\n";
-    return 0;
-}
 
+}
 ```
-@[4,7]
 
 * The _curly braces_ enclose a _block_ of code in C++.
 * __block__ - a set of related C++ statements that perform an action
@@ -208,16 +185,8 @@ int main()
 ## Program Parts
 
 ``` cpp
-#include <iostream>
-
-int main()
-{
-    std::cout << "Hello, World!\n";
-    return 0;
-}
-
+    std::cout << "Hello, World\n";
 ```
-@[5]
 
 * This _statement_ sends the words "Hello, World" to the screen.
 * `std::cout` is the name of the _standard output_ _stream_
@@ -250,18 +219,9 @@ __Examples:__
 ## Program Parts
 
 ``` cpp
-#include <iostream>
-
-int main()
-{
-    std::cout << "Hello, World!\n";
     return 0;
-}
-
 ```
-@[6]
 
-<!-- .element: data-fragment-index="3" -->
 * This line terminates the program by causing the `main()` function to return the value `0` to the operating system.
     - No code following this line would ever be executed; this means that the `return 0;` line will always be the last line in `main()`.
 * The operating system considers zero to be an indication that the program ran normally.  

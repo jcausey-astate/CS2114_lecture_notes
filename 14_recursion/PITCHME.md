@@ -209,7 +209,7 @@ How do you break down a new and difficult problem to find a solution?
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
----?image=/images/Recursion/Towers.png
+---?image=assets/images/Recursion/Towers.png
 
 ## Towers of Hanoi
 
@@ -227,7 +227,7 @@ How do you break down a new and difficult problem to find a solution?
 </p>
 </div>
 
----?image=/images/Recursion/Towers.png
+---?image=assets/images/Recursion/Towers.png
 
 ## Towers of Hanoi
 

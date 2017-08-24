@@ -44,8 +44,7 @@ NumericType times10(NumericType num){
 
 <!-- .slide: data-transition="linear", data-state="code-example" -->
 
-----
-
++++
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
 ## Example 2: Print Array
@@ -63,8 +62,7 @@ Start with a known data type: (`int`) array in this case.
 
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
-----
-
++++
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
 ## Example 2: Print Array
@@ -88,8 +86,7 @@ Here, we have replaced _only the data type(s) that should be generic_ with a tem
 
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
-----
-
++++
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
 ## Example 3: Parallel Arrays
@@ -111,8 +108,7 @@ Again, the function could be more general if `keys` and `values` could be _anyth
 
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
-----
-
++++
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
 ## Example 3: Parallel Arrays
@@ -144,8 +140,7 @@ void printKeyValuePairs(const KeyType   keys[],
 - Function templates can be overloaded (as long as each overload has a unique signature).
 - All type parameters specified in template prefix must be used in the definition.
 
-----
-
++++
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
 ### Example 4: Array Library
@@ -177,8 +172,7 @@ ValueType array_sum(ValueType array[], int size){
 
 </small>
 
-----
-
++++
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
 **`main.cpp`**
@@ -205,8 +199,7 @@ int main(){
 
 </small>
 
-----
-
++++
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
 **`array_utilities.h` - Function Docs Example**

@@ -49,8 +49,7 @@ Humans are not skilled at writing in machine language.
         + Designed to look like a human language
         + Must be translated to machine language
 
-----
-
++++
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
 ## Machine Language (Binary)
@@ -70,8 +69,7 @@ Humans are not skilled at writing in machine language.
 ```
 
 
-----
-
++++
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
 ## Machine Language (Hexadecimal)
@@ -90,8 +88,7 @@ c3
 ```
 
 
-----
-
++++
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
 ## Assembly Language (Intel)
@@ -110,8 +107,7 @@ leave
 ret    
 ```
 
-----
-
++++
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
 ## High Level (C++)
@@ -154,8 +150,7 @@ Now, we will take a look at the parts of the program, and see what each part doe
 * The _iostream_ library contains code that is used for input and output activities.
 
 
-----
-
++++
 
 ## Program Parts
 
@@ -170,8 +165,7 @@ int main()
     - Instructions will be executed one at a time, starting with the first line of `main`.
 
 
-----
-
++++
 
 ## Program Parts
 
@@ -187,8 +181,7 @@ int main()
     - We indent the code between the `{` and the `}`.
 
 
-----
-
++++
 ## Program Parts
 
 ``` cpp
@@ -202,8 +195,7 @@ int main()
 * `"Hello, World!\n"` is a _string literal_; a _string_ is just a collection of characters that are treated as a single unit.
     - String literals are always surrounded by double-quotes.
 
-----
-
++++
 ## Escape Characters
 
 ``` cpp
@@ -217,15 +209,13 @@ int main()
 __Examples:__
 
     Code     Meaning
-    ------------------
-     \n      newline (think of the <ENTER> key)
+    --------------+++     \n      newline (think of the <ENTER> key)
      \t      tab character
      \"      allows a double-quote in a string literal
      \\      allows a backslash in a string literal
      \r      carriage-return (used in Windows line endings: "\r\n")
 
-----
-
++++
 ## Program Parts
 
 ``` cpp

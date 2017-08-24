@@ -175,8 +175,7 @@ fp.open("my_file.txt", std::ios::out|std::ios::app); // append mode
  
 <pre>
 Open Mode       Description
-----------------------------------------------
-std:: ios::in   Input mode (file must exist)
+------------------------------------------+++std:: ios::in   Input mode (file must exist)
 std:: ios::out  Output mode (file will be 
                 created, if it exists, it will
                 be overwritten)

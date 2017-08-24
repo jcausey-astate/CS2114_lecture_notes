@@ -18,8 +18,7 @@ A more general set of shortcut operators are provided for modifying a variable b
 
 <pre>
 Operator Example    Equivalent
---------------------------------------------------------
-   +=    x += y;    x = x + y;
+----------------------------------------------------+++   +=    x += y;    x = x + y;
    -=    x -= y;    x = x - y;
    *=    x *= y;    x = x * y;
    /=    x /= y;    x = x / y;
@@ -34,8 +33,7 @@ To make it even easier to add or subtract one from a variable, C++ offers a set 
 
 <pre>
 Operator Example  Description
---------------------------------------------------------
-   ++    ++x;     Prefix increment operator.  Increments
+----------------------------------------------------+++   ++    ++x;     Prefix increment operator.  Increments
                   x then evaluates to the updated value.
 
    ++    x++;     Postfix increment operator.  Evaluates

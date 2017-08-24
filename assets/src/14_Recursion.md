@@ -70,8 +70,7 @@ void countDown(int timer) {
 
 Similarly to looping (the 3 parts of a loop), recursion has two important steps related to controlling the repetition:
 
------
-
+-+++
 **base case**:  A trivial version of the problem in which the function can directly return a result (_without calling itself_).
 
 **recursive step**: A version of the problem in which simplification through a recursive call is required.  (_No answer can be directly returned._)
@@ -208,14 +207,15 @@ How do you break down a new and difficult problem to find a solution?
 
 ## Towers of Hanoi
 
-<!-- .slide: data-state="image_background" data-background="/images/Recursion/Towers.png" data-background-size="100%" -->
+---?image=assets/images/Recursion/Towers.png
+
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 ---
 
 ## Towers of Hanoi
 
-<!-- .slide: data-state="image_background" data-background="/images/Recursion/Towers.png" data-background-size="100%" -->
+---?image=/images/Recursion/Towers.png
 
 <div style="background-color: rgba(0,0,0,0.4); color: white;">
 <p>
@@ -235,7 +235,7 @@ How do you break down a new and difficult problem to find a solution?
 
 ## Towers of Hanoi
 
-<!-- .slide: data-state="image_background" data-background="/images/Recursion/Towers.png" data-background-size="100%" -->
+---?image=/images/Recursion/Towers.png
 
 <div style="background-color: rgba(0,0,0,0.4); color: white;">
 <p>

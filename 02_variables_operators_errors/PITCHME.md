@@ -60,7 +60,7 @@ The declaration statement above tells the compiler to create a variable named `t
 So what types of things can we store in variables?
 
 | Type Name | Description | Literal Examples |
-|:---------:| ----------- |:----------------:|
+|:---------:| -------+++|:----------------:|
 | __`int`__ | Integer value         | `96`, `-33` |
 | __`double`__ | Floating-point (Real number) value | `3.14`, `-1.0` |
 | __`char`__   | Single character   | `'a'`, `'4'` |
@@ -171,8 +171,7 @@ int temperature = 82;
 
 The statement above _declares_ a variable named `temperature` __and__ _initializes_ `temperature` to contain the value `82`.
 
-----
-
++++
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
 ## Example
@@ -299,8 +298,7 @@ std::cin  >> x;                          // read x
 ## C++ Mathematical Operators
 
     Operator    Meaning                 Expression  Result
-    ------------------------------------------------------
-    +           Addition                 3 + 4      7
+    --------------------------------------------------+++    +           Addition                 3 + 4      7
     -           Subtraction              4 - 6      -2
     -           Negation (unary -)      -3 + 1      -2
     *           Multiplication           3 * 5      15
@@ -321,8 +319,7 @@ Beware of the division operator!
 Shown from highest to lowest:
 
     Operator(s)   Associativity
-    ---------------------------
-    - (unary)     right-to-left
+    -----------------------+++    - (unary)     right-to-left
     *, /, %       left-to-right
     +, -          left-to-right
     =             right-to-left
@@ -358,8 +355,7 @@ The `const` type modifier changes a declaration statement from a variable declar
 
 The value of a _constant_ can never be changed once it has been initialized.
 
-----
-
++++
 <!-- .slide: data-transition="none", data-state="code-example" -->
 
 ### `const Example`

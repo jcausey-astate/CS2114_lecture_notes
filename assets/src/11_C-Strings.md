@@ -11,7 +11,7 @@ There is more than one way to do it... But C++ (by default) type `char` uses the
 
 ---
 
-<section data-background=assets/imagesshared/ascii_table.svg" data-background-size="72%" >
+---?image=assets/assets/imagesshared/ascii_table.svg&size=auto 72%
 
 ---
 
@@ -117,8 +117,7 @@ The `<cstring>` header file contains functions that are useful for dealing with 
 
 <pre>
  Function                   Description 
--------------------------------------------------------------
-strlen(str)                 Returns length of `str`
+---------------------------------------------------------+++strlen(str)                 Returns length of `str`
 strcmp(str1, str2)          Compares `str1` to `str2` 
                             "alphabetically"
 strcpy(dst, src)            Copies `src` into `dst` 
@@ -313,8 +312,7 @@ Require `<cstdlib>`
 
 <pre>
  Function                   Description 
--------------------------------------------------------------
-atoi(str)                   Converts c-string to an int
+---------------------------------------------------------+++atoi(str)                   Converts c-string to an int
 atol(str)                   Converts c-string to a long
 atof(str)                   Converts c-string to a double
 </pre>

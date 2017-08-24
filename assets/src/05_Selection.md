@@ -32,8 +32,7 @@ Relational operators compare two values, and evaluate to a `bool` result based o
 
 <pre>
     Operator    Description     
-    -------------------------------------
-       >        greater than    
+    ---------------------------------+++       >        greater than    
        <        less than       
        >=       greater than or equal to
        <=       less than or equal to
@@ -47,8 +46,7 @@ Relational operators compare two values, and evaluate to a `bool` result based o
 
 <pre>
     Expression                  Result
-    ----------------------------------
-    3.4 < 9                     true
+    ------------------------------+++    3.4 < 9                     true
     8 == 8                      true
     -3 >= 0                     false
     9 != 0                      true
@@ -70,8 +68,7 @@ Logical (or Boolean) operators are used to combine relational expressions to cre
 
 <pre>
     Operator    Description     
-    -----------------------
-       &&       and
+    -------------------+++       &&       and
        ||       or
        !        not (unary)
 </pre>
@@ -82,8 +79,7 @@ Logical (or Boolean) operators are used to combine relational expressions to cre
 
 <pre>
     Expression                  Result
-    ----------------------------------
-    3.4 < 9 || 9 < 0            true
+    ------------------------------+++    3.4 < 9 || 9 < 0            true
     3 == 3 && 3 > 12            false
     9 < 4 || 0 > 3              false
     9 > 4 && 3 != 0             true

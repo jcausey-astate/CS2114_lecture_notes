@@ -9,8 +9,7 @@
 The `<iomanip>` library supplies a set of _stream manipulators_ that may be used in conjunction with the stream insertion operator to format output.  
 <pre>
 Manipulator            Description
-------------------------------------------------------------
-std::setw( w )         set the width of the next item in the
+--------------------------------------------------------+++std::setw( w )         set the width of the next item in the
                        stream to 'w'
 std::setprecision( p ) set number of significant figures in 
                        output to 'p', or set the number of 
@@ -104,8 +103,7 @@ There are many mathematical functions that do not have an operator in C++.  The 
 
 <pre>
 Function Name      Description
----------------------------------------------------------
-pow(base, exp)     Returns base raised to power of exp
+-----------------------------------------------------+++pow(base, exp)     Returns base raised to power of exp
 sqrt(x)            Returns square root of x
 floor(x)           Returns the mathematical floor of x
 ceil(x)            Returns the mathematical ceiling of x

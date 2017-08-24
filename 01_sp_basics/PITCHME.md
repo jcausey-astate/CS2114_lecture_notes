@@ -119,7 +119,7 @@ int main(){
 }
 ```
 
-![Happy Human](assets/images/SP_Basics/Happy.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+![Happy Human](assets/images/SP_Basics/happy.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 

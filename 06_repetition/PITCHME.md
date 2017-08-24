@@ -34,7 +34,7 @@ To make it even easier to add or subtract one from a variable, C++ offers a set 
 
 <pre>
 Operator Example  Description
--------------------------------------------------------
+--------------------------------------------------------
    ++    ++x;     Prefix increment operator.  Increments
                   x then evaluates to the updated value.
 

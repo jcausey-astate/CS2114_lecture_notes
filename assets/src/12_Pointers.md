@@ -195,7 +195,8 @@ Pointers support the following mathematical operations:
 
 ```
 Operation           Example      Description
--------------------------------------------------+++ <ptr> + <int>      xPtr + 3     Add an offset
+----------------------------------------------------
+ <ptr> + <int>      xPtr + 3     Add an offset
  <ptr> - <int>      xPtr - 2     Subtract an offset
  ++<ptr>            ++xPtr       (pre) increment
  <ptr>++            xPtr++       (post) increment

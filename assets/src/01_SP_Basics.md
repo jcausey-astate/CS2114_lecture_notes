@@ -209,7 +209,8 @@ int main()
 __Examples:__
 
     Code     Meaning
-    --------------+++     \n      newline (think of the <ENTER> key)
+    -----------------
+     \n      newline (think of the <ENTER> key)
      \t      tab character
      \"      allows a double-quote in a string literal
      \\      allows a backslash in a string literal

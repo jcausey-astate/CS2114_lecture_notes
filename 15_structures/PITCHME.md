@@ -50,7 +50,8 @@ WorkDayAbr today = MON;
 ``` cpp
 enum WorkDayAbr = {MON, TUE, WED, 
                    THR, FRI};
---------------------------------------+++int rain[5]  = {5, 15, 35, 95, 10};
+-----------------------------------------
+int rain[5]  = {5, 15, 35, 95, 10};
 string names = {"Monday", "Tuesday",
                 "Wednesday", "Thursday",
                 "Friday"};
@@ -254,7 +255,9 @@ struct PersonV1{                struct PersonV2{
     int  age;                       int   age;
     char name[30];                  char* name;
 };                              };
-//----------------------+++IN MAIN: ------------------------------+++PersonV1 p1, p1copy;
+//-------------------------
+IN MAIN: ---------------------------------
+PersonV1 p1, p1copy;
 PersonV2 p2, p2copy;
 
 p1.age = 10;
@@ -276,7 +279,9 @@ struct PersonV1{                struct PersonV2{
     int  age;                       int   age;
     char name[30];                  char* name;
 };                              };
-//----------------------+++IN MAIN: ------------------------------+++PersonV1 p1, p1copy; // p1 name is "Adam"
+//-------------------------
+IN MAIN: ---------------------------------
+PersonV1 p1, p1copy; // p1 name is "Adam"
 PersonV2 p2, p2copy; // p2 name is "Alice"
 // [...]
 p1copy = p1;
@@ -305,7 +310,9 @@ struct PersonV1{                struct PersonV2{
     int  age;                       int   age;
     char name[30];                  char* name;
 };                              };
-//----------------------+++IN MAIN: ------------------------------+++PersonV1 p1, p1copy; // p1 name is "Adam"
+//-------------------------
+IN MAIN: ---------------------------------
+PersonV1 p1, p1copy; // p1 name is "Adam"
 PersonV2 p2, p2copy; // p2 name is "Alice"
 // [...]
 p1copy = p1;

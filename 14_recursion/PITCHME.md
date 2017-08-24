@@ -70,7 +70,8 @@ void countDown(int timer) {
 
 Similarly to looping (the 3 parts of a loop), recursion has two important steps related to controlling the repetition:
 
--+++
+----
+
 **base case**:  A trivial version of the problem in which the function can directly return a result (_without calling itself_).
 
 **recursive step**: A version of the problem in which simplification through a recursive call is required.  (_No answer can be directly returned._)

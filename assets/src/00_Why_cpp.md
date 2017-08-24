@@ -1,7 +1,7 @@
 <h1 style="color:white;text-shadow:none;font-size:4.5em;font-weight:bold;position:absolute; top:-2.1em; left: 0em;">Why C++?</h1>
 
 
-<!-- .slide: data-background="images/why_cpp/Why_Arizona.jpg" data-background-size="100%" -->
+<!-- .slide: data-background=assets/imageswhy_cpp/Why_Arizona.jpg" data-background-size="100%" -->
 
 ---
 

@@ -52,7 +52,7 @@ int votes[5][3]; // create array with 5 rows and 3 columns
 int votes[5][3]; // create array with 5 rows and 3 columns
 ```
 
-![2-D Array of integers.](images/shared/2D_array_with_indices.svg)
+![2-D Array of integers.]assets/imagesshared/2D_array_with_indices.svg)
 
 ---
 
@@ -65,7 +65,7 @@ In reality, all physical memory is 1-dimensional.
 
 Rows are sequential!
 
-![2-D Array of integers.](images/shared/2D_array_with_indices_physical_layout.svg)
+![2-D Array of integers.]assets/imagesshared/2D_array_with_indices_physical_layout.svg)
 
 ---
 

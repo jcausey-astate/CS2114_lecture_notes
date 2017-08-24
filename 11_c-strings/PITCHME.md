@@ -11,7 +11,7 @@ There is more than one way to do it... But C++ (by default) type `char` uses the
 
 ---
 
-<section data-background="images/shared/ascii_table.svg" data-background-size="72%" >
+<section data-background=assets/imagesshared/ascii_table.svg" data-background-size="72%" >
 
 ---
 
@@ -19,7 +19,7 @@ There is more than one way to do it... But C++ (by default) type `char` uses the
 
 The following functions require the `<cctype>` header.
 
-![Character testing functions.](images/c_strings/char_testing.png)
+![Character testing functions.]assets/imagesc_strings/char_testing.png)
 
 ---
 
@@ -60,7 +60,7 @@ C++ provides support for a low-level representation of strings of characters as 
 * String literals such as `"SMITH"` are internally represented as c-strings by default.
 * Internally, they look like the following:
 
-![Character testing functions.](images/c_strings/c_string_literal_in_memory.svg)
+![Character testing functions.]assets/imagesc_strings/c_string_literal_in_memory.svg)
 
 ---
 
@@ -74,7 +74,7 @@ char name[6] = "SMITH";
 
 Produces:
 
-![Character testing functions.](images/shared/c_string_in_memory.svg)
+![Character testing functions.]assets/imagesshared/c_string_in_memory.svg)
 
 * The trailing `'\0'` is added automatically during the initialization.
 

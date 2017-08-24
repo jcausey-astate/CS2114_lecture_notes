@@ -5,7 +5,7 @@
 
 ---
 
-![Tiobe Index](images/why_cpp/tiobe-index.png)
+![Tiobe Index](assets/images/why_cpp/tiobe-index.png)
 
 Source: http://www.tiobe.com/tiobe-index/
 

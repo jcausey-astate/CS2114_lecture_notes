@@ -38,7 +38,7 @@ We will begin by examining the way C++ provides for temporary data storage and r
     - This address is what the machine uses to refer to data.
 * _Physical memory_ is limited, but _logical memory_ (our view of memory as programmers) is usually treated as if it were unlimited.
 
-![Logical Memory](/images/Variables_Operators_Errors/Logical_Memory.svg) 
+![Logical Memory](assets/images/Variables_Operators_Errors/Logical_Memory.svg) 
 
 ---
 
@@ -140,7 +140,7 @@ int temperature;
 
 The declaration above produces the situation in memory shown below:
 
-![Variable Declaration](/images/Variables_Operators_Errors/int_temperature_memory.svg) 
+![Variable Declaration](assets/images/Variables_Operators_Errors/int_temperature_memory.svg) 
 
 
 ---

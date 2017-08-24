@@ -32,7 +32,7 @@ Computers execute code that is stored in _computer memory_ in a _binary_ form.
 
 Humans are not skilled at writing in machine language.
 
-![Confused Human](/images/SP_Basics/confused_brad.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+![Confused Human](assets/images/SP_Basics/confused_brad.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
@@ -119,7 +119,7 @@ int main(){
 }
 ```
 
-![Happy Human](/images/SP_Basics/Happy.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
+![Happy Human](assets/images/SP_Basics/Happy.jpg) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
@@ -243,7 +243,7 @@ __Terms from Program Parts__
 
 ## Our Development Toolchain
 
-![Our Development Toolchain](/images/SP_Basics/Our_Compiling_Toolchain.png) 
+![Our Development Toolchain](assets/images/SP_Basics/Our_Compiling_Toolchain.png) 
 
 * User's Side: Editing, running and testing.
 * Server Side: Stores files, provides compiler and other tools.

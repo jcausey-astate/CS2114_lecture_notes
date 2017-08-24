@@ -1,6 +1,5 @@
-<h1 style="color:white;text-shadow:none;font-size:4.5em;font-weight:bold;position:absolute; top:-2.1em; left: 0em;">Why C++?</h1>
-
 ---?image=assets/assets/imageswhy_cpp/Why_Arizona.jpg
+<h1 style="color:white;text-shadow:none;font-size:4.5em;font-weight:bold;position:absolute; top:-2.1em; left: 0em;">Why C++?</h1>
 
 ---
 

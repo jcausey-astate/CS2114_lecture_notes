@@ -4,8 +4,6 @@
 
 ---?image=assets/images/why_cpp/Why_Arizona.jpg
 
-<style>a{ color: black; }</style>
-
 ![Tiobe Index](assets/images/why_cpp/tiobe-index.png)
 
 Source: http://www.tiobe.com/tiobe-index/

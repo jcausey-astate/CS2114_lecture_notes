@@ -1,3 +1,5 @@
+|   |   |
+|---|---|
 | [00_introduction](?p=00_introduction) | [11_c-strings](?p=11_c-strings) |
 | [00b_why_cpp](?p=00b_why_cpp)         | [12_pointers](?p=12_pointers) |
 | [01_sp_basics](?p=01_sp_basics) | [13_dynamic_memory](?p=13_dynamic_memory) |

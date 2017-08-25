@@ -38,7 +38,7 @@ We will begin by examining the way C++ provides for temporary data storage and r
     - This address is what the machine uses to refer to data.
 * _Physical memory_ is limited, but _logical memory_ (our view of memory as programmers) is usually treated as if it were unlimited.
 
-![Logical Memory](assets/images/Variables_Operators_Errors/Logical_Memory.svg) 
+![Logical Memory]( https://github.com/jcausey-astate/CS2114_lecture_notes/assets/images/Variables_Operators_Errors/Logical_Memory.svg ) 
 
 ---
 
@@ -60,8 +60,7 @@ The declaration statement above tells the compiler to create a variable named `t
 So what types of things can we store in variables?
 
 | Type Name | Description | Literal Examples |
-|:---------:| ----------
-|:----------------:|
+|:---------:| ----------- |:----------------:|
 | __`int`__ | Integer value         | `96`, `-33` |
 | __`double`__ | Floating-point (Real number) value | `3.14`, `-1.0` |
 | __`char`__   | Single character   | `'a'`, `'4'` |
@@ -141,7 +140,7 @@ int temperature;
 
 The declaration above produces the situation in memory shown below:
 
-![Variable Declaration](assets/images/Variables_Operators_Errors/int_temperature_memory.svg) 
+![Variable Declaration]( https://github.com/jcausey-astate/CS2114_lecture_notes/assets/images/Variables_Operators_Errors/int_temperature_memory.svg ) 
 
 
 ---

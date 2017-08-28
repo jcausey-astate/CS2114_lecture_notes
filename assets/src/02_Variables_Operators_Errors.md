@@ -415,7 +415,7 @@ See the documentation guidelines that your code must meet on the course website.
 
 ## Programming Errors
 
-Programmers are human<sup><small>[citation needed]</small></sup>.  <small>Errors are unavoidable.  Learning to expect, detect, and fix those errors is a key component of learning to program.</small>
+Programmers are human.<sup><small>[citation needed]</small></sup>  <small>Errors are unavoidable.  Learning to expect, detect, and fix those errors is a key component of learning to program.</small>
 
 * Types of Errors
     - Syntax Errors

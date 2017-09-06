@@ -94,7 +94,7 @@ std::cin.get(ch); // Will wait for the enter key, then continue.
 ```
 
 The `get()` function also works with other streams, in general the syntax is: <br />
-_`stream`_`.get(`_`character\_var`_`)`
+_`stream`_`.get(`*`character_var`*`)`
 
 ---
 

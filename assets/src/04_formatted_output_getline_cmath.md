@@ -88,7 +88,8 @@ The `cin.get()` function can be used to read a single character, which may be wh
 **Example**
 ``` cpp
 char ch;
-// Reading the <ENTER> key with `>>` alone is difficult... so use `get()`:
+// Reading the <ENTER> key with `>>` alone is difficult... 
+// So, use `get()`:
 std::cout << "Press <ENTER> to continue...";
 std::cin.get(ch); // Will wait for the enter key, then continue.
 ```

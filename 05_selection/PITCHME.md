@@ -144,7 +144,7 @@ The `if`-`else` construct allows us to choose between two outcomes:
 
 **Syntax**  
 `if( `<i>`conditional_expression`</i>` )`   
-&nbsp;&nbsp;&nbsp;&nbsp;<i>`statement_executed_if_true;`</i>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>`statement_executed_if_true;`</i><br>
 `else`   
 &nbsp;&nbsp;&nbsp;&nbsp;<i>`statement_executed_if_false;`</i>
 

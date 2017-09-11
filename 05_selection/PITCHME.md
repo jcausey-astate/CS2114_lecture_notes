@@ -143,10 +143,10 @@ if( x < 0 )  { // Check for a negative value
 The `if`-`else` construct allows us to choose between two outcomes:
 
 **Syntax**  
-`if( `_`conditional_expression`_` )`   
-&nbsp;&nbsp;&nbsp;&nbsp;_`statement_executed_if_true;`_   
+`if( `<i>`conditional_expression`</i>` )`   
+&nbsp;&nbsp;&nbsp;&nbsp;<i>`statement_executed_if_true;`</i>
 `else`   
-&nbsp;&nbsp;&nbsp;&nbsp;_`statement_executed_if_false;`_
+&nbsp;&nbsp;&nbsp;&nbsp;<i>`statement_executed_if_false;`</i>
 
 **Example**
 ``` cpp

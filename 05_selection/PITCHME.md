@@ -109,8 +109,8 @@ Although control structures (such as the `if`) are _not actually statements_, th
 The most basic form of the C++ `if` statement allows us to choose whether or not to take a specific action:
 
 **Syntax**  
-`if( `_`conditional_expression`_` )`   
-&nbsp;&nbsp;&nbsp;&nbsp;_`statement_executed_if_true;`_
+`if( `<i>`conditional_expression`</i>` )`   
+&nbsp;&nbsp;&nbsp;&nbsp;<i>`statement_executed_if_true;`</i>
 
 **Example**
 ``` cpp

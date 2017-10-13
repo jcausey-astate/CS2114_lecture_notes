@@ -29,7 +29,7 @@ int tests[5];
 
 allocates the following memory:
 
-![Array elements are contiguous boxes in memory.]assets/imagesshared/integer_array_no_indices.svg)
+![Array elements are contiguous boxes in memory.](https://cdn.rawgit.com/jcausey-astate/CS2114_lecture_notes/master/assets/imagesshared/integer_array_no_indices.svg)
 
 * Arrays are a _reference type_.
     - The array variable does not refer to the array as a whole, only to the location of the first element.
@@ -68,11 +68,11 @@ int       tests[CLASS_SIZE];
 
 Each individual data item in an array is referred to as an _array element_.
 
-![Array elements are contiguous boxes in memory.]assets/imagesshared/integer_array_no_indices.svg)
+![Array elements are contiguous boxes in memory.](https://cdn.rawgit.com/jcausey-astate/CS2114_lecture_notes/master/assets/imagesshared/integer_array_no_indices.svg)
 
 Elements are identified by an integer _index_, starting from 0.
 
-![Array elements are identified by integer indices.]assets/imagesshared/integer_array_with_indices.svg)
+![Array elements are identified by integer indices.](https://cdn.rawgit.com/jcausey-astate/CS2114_lecture_notes/master/assets/imagesshared/integer_array_with_indices.svg)
 
 ---
 
@@ -80,7 +80,7 @@ Elements are identified by an integer _index_, starting from 0.
 
 Array elements start out _uninitialized_.
 
-![Array elements are uninitialized.]assets/imagesshared/integer_array_uninitialized.svg)
+![Array elements are uninitialized.](https://cdn.rawgit.com/jcausey-astate/CS2114_lecture_notes/master/assets/imagesshared/integer_array_uninitialized.svg)
 
 Use the element's _index number_ and _array index syntax_ to access individual elements:
 
@@ -88,7 +88,7 @@ Use the element's _index number_ and _array index syntax_ to access individual e
 tests[0] = 88;
 ```
 
-![Array with first value initialized.]assets/imagesshared/integer_array_first_element_initialized.svg)
+![Array with first value initialized.](https://cdn.rawgit.com/jcausey-astate/CS2114_lecture_notes/master/assets/imagesshared/integer_array_first_element_initialized.svg)
 
 ---
 
@@ -104,7 +104,7 @@ tests[4] = 63;
 
 Produces:
 
-![Array with values.]assets/imagesshared/integer_array_with_values.svg)
+![Array with values.](https://cdn.rawgit.com/jcausey-astate/CS2114_lecture_notes/master/assets/imagesshared/integer_array_with_values.svg)
 
 ---
 
@@ -156,7 +156,7 @@ int tests[5] = { 88, 92, 76, 85, 63 };
 
 Creates the same array we saw earlier:
 
-![Array with values.]assets/imagesshared/integer_array_with_values.svg)
+![Array with values.](https://cdn.rawgit.com/jcausey-astate/CS2114_lecture_notes/master/assets/imagesshared/integer_array_with_values.svg)
 
 ---
 

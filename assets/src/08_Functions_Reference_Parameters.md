@@ -9,7 +9,7 @@
 * Pass by value is the default method by which data is moved into a function for _primitive types_, _structured types_ and _object types_.
     - Changes to the formal parameter _cannot_ affect the actual parameter.
 
-![COPY](assets/imagesshared/copy-stamp.jpg)
+![COPY](assets/images/shared/copy-stamp.jpg)
 
 ---
 

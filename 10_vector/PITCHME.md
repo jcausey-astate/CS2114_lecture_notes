@@ -114,19 +114,22 @@ STL’s `std::vector` is essentially a dynamic array.
 ## `std::vector` Example
     
 ``` cpp
-std::vector<std::string> v;                  // create vector
+using std::vector;
+using std::string;
+// [...]
+vector<string> v;                   // create vector
 
-v.push_back("The number is 10");             // push some values
-v.push_back("The number is 20");             // into it...
+v.push_back("The number is 10");    // push some values
+v.push_back("The number is 20");    // into it...
 v.push_back("The number is 30");
 
 cout << "Loop by index:" << endl;
 
-for(std::vector<std::string>::size_type i=0; // size type is unsigned
-    i < v.size();                            // vector knows its size!
-    i++){                                    // print values by            
-   cout << v[i] << endl;                     // indexing the
-}                                            // vector like an array
+for(vector<string>::size_type i=0;  // size type is unsigned
+    i < v.size();                   // vector knows its size!
+    i++){                           // print values by            
+   cout << v[i] << endl;            // indexing the
+}                                   // vector like an array
 ```
 
 +++

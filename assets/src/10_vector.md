@@ -186,10 +186,10 @@ for( auto item : v ){               // for each item in v
 ## `std::vector` Example 3
     
 ``` cpp
-auto v = std::vector<std::string>{3};    // pre-size to fit 3 items
+auto v = std::vector<std::string>{3};    // pre-size to 3
 
 int  n = 1;
-for( auto& item : v){                    // for each item (by reference)
+for( auto& item : v){                    // each item (by ref.)
     item = std::string{"The number is "} // generate message
          + std::to_string(10 * n++);     // and store in item
 }

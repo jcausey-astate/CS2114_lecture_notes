@@ -32,11 +32,18 @@ STL contains algorithms implemented as function templates.
 
 ---
 
-        accumulate()      max()
-        binary_search()   max_element()
-        copy()            min()
-        count()           min_element()
-        fill()            reverse()
-        find()            sort()
-        is_sorted()       swap()
+Container-wise algorithms:
 
+        accumulate()        is_sorted()
+        binary_search()     max_element()
+        copy()              min_element()
+        count()             reverse()
+        fill()              sort()
+        find()
+
+Element-wise algorithms:
+
+        max()               swap()
+        min()
+
+---

@@ -30,3 +30,13 @@ STL contains algorithms implemented as function templates.
 
 ![Range based iterators](assets/images/shared/range_iterators_in_array.png)
 
+---
+
+        accumulate()      max()
+        binary_search()   max_element()
+        copy()            min()
+        count()           min_element()
+        fill()            reverse()
+        find()            sort()
+        is_sorted()       swap()
+

@@ -242,33 +242,3 @@ for(auto it = scores.begin(); it != grade_list.end(); it++){
 std::cout << '\n';
 ```
 
----
-
-## Algorithms
-
-STL contains algorithms implemented as function templates.
-
-- Designed to perform operations on containers.
-- Requires algorithm header file  `#include <algorithm>`
-- Includes:
-    
-        binary_search     count
-        find              find_if         
-        for_each          max_element
-        min_element       partition
-        random_shuffle    rotate
-        sort              stable_partition
-        stable_sort       ... and many more 
-
----
-
-## C++ Standard Smart Pointers
-
-Requires the `<memory>` header.
-
-* `std::unique_ptr` - Takes singular (non-shared) ownership of a resource.
-* `std::shared_ptr` - Assumes shared ownership of a resource.
-* `std::weak_ptr` - A non-owning pointer that can be converted to a `shared_ptr` when access to the resource is required.
-
-
-

@@ -164,7 +164,9 @@ Find "target" element; returns an iterator to the target or `last` if not found.
 ```cpp
 std::vector<int> v{5,3,4,2,9,2,6,3,8};
 
-std::vector<int>::iterator it = std::find(v.begin(), v.end(), 9);
+std::vector<int>::iterator it;
+it = std::find(v.begin(), v.end(), 9);
+
 if(it != v.end()){
     std::cout << "Found " << (*it) << '\n';
 }
@@ -204,7 +206,8 @@ Returns an iterator to the (first) maximum element.
 ```cpp
 std::vector<int> v{5,3,4,2,9,2,6,3,8};
 
-std::vector<int>::iterator it = std::max_element(v.begin(), v.end());
+std::vector<int>::iterator it;
+it = std::max_element(v.begin(), v.end());
 
 std::cout << (*it) << '\n';
 // 9
@@ -221,7 +224,8 @@ Returns an iterator to the (first) minimum element.
 ```cpp
 std::vector<int> v{5,3,4,2,9,2,6,3,8};
 
-std::vector<int>::iterator it = std::min_element(v.begin(), v.end());
+std::vector<int>::iterator it;
+it = std::min_element(v.begin(), v.end());
 
 std::cout << (*it) << '\n';
 // 2

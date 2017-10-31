@@ -30,7 +30,7 @@ STL contains algorithms implemented as function templates.
 
 ![Sub-range in array](https://cdn.rawgit.com/jcausey-astate/CS2114_lecture_notes/master/assets/images/shared/range_iterators_to_subrange.svg)
 
-----
++++
 
 ### "`first`", "`last`": usually `begin`, `end`:
 

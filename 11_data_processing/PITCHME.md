@@ -56,9 +56,9 @@ Element-wise algorithms:
 
 ---
 
-## `accumulate(_first_, _last_, _start\_value_)`
+## `accumulate(`_`first`_`, `_`last`_`, `_`start_value`_`)`
 
-Returns the sum of the range [`_first_`,`_last_`), starting from the initial value `_start\_value_`.
+Returns the sum of the range [_`first`_,_`last`_), starting from the initial value _`start_value`_.
 
 ```cpp
 std::vector<int> v{5,3,4,2,9,2,6,3,8};
@@ -70,9 +70,9 @@ std::cout << sum << '\n';
 
 ---
 
-## `binary_search(_first_, _last_, _target_)`
+## `binary_search(`_`first`_`, `_`last`_`, `_`target`_`)`
 
-Fast search in range for `_target_`; requires range to be sorted.  Returns `true` if the target is found, `false` otherwise.
+Fast search in range for _`target`_; requires range to be sorted.  Returns `true` if the target is found, `false` otherwise.
 
 ```cpp
 std::vector<int> v{0,2,4,6,8,10,12,14,16,18};
@@ -91,9 +91,9 @@ if( found ){
 
 ---
 
-## `copy(_src\_first_, _src\_last_, _dst\_first_)`
+## `copy(`_`src_first`_`, `_`src_last`_`, `_`dst_first`_`)`
 
-Copies range [_src\_first_,_src\_last_) to destination starting at `_dst\_first_`.
+Copies range [_`src_first`_,_`src_last`_) to destination starting at _`dst_first`_.
 
 ```cpp
 std::vector<int> v1{5,3,4,2,9,2,6,3,8};
@@ -112,9 +112,9 @@ Note that invalid arguments cause _**undefined behavior**_.
 
 ---
 
-## `count(_first_, _last_, _target_)`
+## `count(`_`first`_`, `_`last`_`, _target_)`
 
-Count the number of times `_target_` appears in the range.
+Count the number of times _`target`_ appears in the range.
 
 ```cpp
 std::vector<int> v{5,2,4,2,9,2,6,3,8};
@@ -127,7 +127,7 @@ std::cout << "There are " << number_of_twos << " twos.\n";
 
 ---
 
-## `fill(_first_, _last_, _value_)`
+## `fill(`_`first`_`, `_`last`_`, `_`value`_`)`
 
 Fill a range with a single value.
 
@@ -145,9 +145,9 @@ for( auto item : v ){
 
 ---
 
-## `find(_first_, _last_, _target_)`
+## `find(`_`first`_`, `_`last`_`, `_`target`_`)`
 
-Find "target" element; returns an iterator to the target or `last` if not found.
+Find "target" element; returns an iterator to the target or _`last`_ if not found.
 
 ```cpp
 std::vector<int> v{5,3,4,2,9,2,6,3,8};
@@ -161,7 +161,7 @@ if(it != v.end()){
 
 ---
 
-## `is_sorted(_first_, _last_)`
+## `is_sorted(`_`first`_`, `_`last`_`)`
 
 Returns `true` if the range is sorted; `false` otherwise.
 
@@ -181,7 +181,7 @@ if( std::is_sorted(v2.begin(), v2.end())){
 
 ---
 
-## `max_element(_first_, _last_)`
+## `max_element(`_`first`_`, `_`last`_`)`
 
 Returns an iterator to the (first) maximum element.
 
@@ -196,7 +196,7 @@ std::cout << (*it) << '\n';
 
 ---
 
-## `min_element(_first_, _last_)`
+## `min_element(`_`first`_`, `_`last`_`)`
 
 Returns an iterator to the (first) minimum element.
 
@@ -211,7 +211,7 @@ std::cout << (*it) << '\n';
 
 ---
 
-## `reverse(_first_, _last_)`
+## `reverse(`_`first`_`, `_`last`_`)`
 
 Reverses the order of values in the range.
 
@@ -228,7 +228,7 @@ for( auto item : v ){
 
 ---
 
-## `sort(_first_, _last_)`
+## `sort(`_`first`_`, `_`last`_`)`
 
 Sorts a container in-place.
 
@@ -245,7 +245,7 @@ for( auto item : v ){
 
 ---
 
-## `max(_value1_, _value2_)`
+## `max(`_`value1`_`, `_`value2`_`)`
 
 Returns the larger of the two values.
 
@@ -259,7 +259,7 @@ std::cout << std::max(a, b) << '\n';
 
 ---
 
-## `min(_value1_, _value2_)`
+## `min(`_`value1`_`, `_`value2`_`)`
 
 Returns the smaller of the two values.
 
@@ -273,7 +273,7 @@ std::cout << std::min(a, b) << '\n';
 
 ---
 
-## `swap(_value1_, _value2_)`
+## `swap(`_`value1`_`, `_`value2`_`)`
 
 Swaps the values stored in the arguments.
 

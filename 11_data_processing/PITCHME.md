@@ -60,7 +60,7 @@ Element-wise algorithms:
 <br><br>
 
 
-Returns the sum of the range [_`first`_,_`last`_), starting from the initial value _`start_value`_.
+Returns the sum of the range [`first`,`last`), starting from the initial value `start_value`.
 
 ```cpp
 std::vector<int> v{5,3,4,2,9,2,6,3,8};
@@ -76,7 +76,7 @@ std::cout << sum << '\n';
 <br><br>
 
 
-Fast search in range for _`target`_; requires range to be sorted.  Returns `true` if the target is found, `false` otherwise.
+Fast search in range for `target`; requires range to be sorted.  Returns `true` if the target is found, `false` otherwise.
 
 ```cpp
 std::vector<int> v{0,2,4,6,8,10,12,14,16,18};
@@ -99,7 +99,7 @@ if( found ){
 <br><br>
 
 
-Copies range [_`src_first`_,_`src_last`_) to destination starting at _`dst_first`_.
+Copies range [`src_first`,`src_last`) to destination starting at `dst_first`.
 
 ```cpp
 std::vector<int> v1{5,3,4,2,9,2,6,3,8};
@@ -122,7 +122,7 @@ Note that invalid arguments cause _**undefined behavior**_.
 <br><br>
 
 
-Count the number of times _`target`_ appears in the range.
+Count the number of times `target` appears in the range.
 
 ```cpp
 std::vector<int> v{5,2,4,2,9,2,6,3,8};
@@ -159,7 +159,7 @@ for( auto item : v ){
 <br><br>
 
 
-Find "target" element; returns an iterator to the target or _`last`_ if not found.
+Find "target" element; returns an iterator to the target or `last` if not found.
 
 ```cpp
 std::vector<int> v{5,3,4,2,9,2,6,3,8};

@@ -56,7 +56,7 @@ Element-wise algorithms:
 
 ---
 
-## `accumulate(`_`first`_`, `_`last`_`, `_`start_value`_`)`
+## `accumulate(first, last, start_value)`
 
 Returns the sum of the range [_`first`_,_`last`_), starting from the initial value _`start_value`_.
 
@@ -70,7 +70,7 @@ std::cout << sum << '\n';
 
 ---
 
-## `binary_search(`_`first`_`, `_`last`_`, `_`target`_`)`
+## `binary_search(first, last, target)`
 
 Fast search in range for _`target`_; requires range to be sorted.  Returns `true` if the target is found, `false` otherwise.
 
@@ -91,7 +91,7 @@ if( found ){
 
 ---
 
-## `copy(`_`src_first`_`, `_`src_last`_`, `_`dst_first`_`)`
+## `copy(src_first, src_last, dst_first)`
 
 Copies range [_`src_first`_,_`src_last`_) to destination starting at _`dst_first`_.
 
@@ -112,7 +112,7 @@ Note that invalid arguments cause _**undefined behavior**_.
 
 ---
 
-## `count(`_`first`_`, `_`last`_`, _target_)`
+## `count(first, last, _target_)`
 
 Count the number of times _`target`_ appears in the range.
 
@@ -127,7 +127,7 @@ std::cout << "There are " << number_of_twos << " twos.\n";
 
 ---
 
-## `fill(`_`first`_`, `_`last`_`, `_`value`_`)`
+## `fill(first, last, value)`
 
 Fill a range with a single value.
 
@@ -145,7 +145,7 @@ for( auto item : v ){
 
 ---
 
-## `find(`_`first`_`, `_`last`_`, `_`target`_`)`
+## `find(first, last, target)`
 
 Find "target" element; returns an iterator to the target or _`last`_ if not found.
 
@@ -161,7 +161,7 @@ if(it != v.end()){
 
 ---
 
-## `is_sorted(`_`first`_`, `_`last`_`)`
+## `is_sorted(first, last)`
 
 Returns `true` if the range is sorted; `false` otherwise.
 
@@ -181,7 +181,7 @@ if( std::is_sorted(v2.begin(), v2.end())){
 
 ---
 
-## `max_element(`_`first`_`, `_`last`_`)`
+## `max_element(first, last)`
 
 Returns an iterator to the (first) maximum element.
 
@@ -196,7 +196,7 @@ std::cout << (*it) << '\n';
 
 ---
 
-## `min_element(`_`first`_`, `_`last`_`)`
+## `min_element(first, last)`
 
 Returns an iterator to the (first) minimum element.
 
@@ -211,7 +211,7 @@ std::cout << (*it) << '\n';
 
 ---
 
-## `reverse(`_`first`_`, `_`last`_`)`
+## `reverse(first, last)`
 
 Reverses the order of values in the range.
 
@@ -228,7 +228,7 @@ for( auto item : v ){
 
 ---
 
-## `sort(`_`first`_`, `_`last`_`)`
+## `sort(first, last)`
 
 Sorts a container in-place.
 
@@ -245,7 +245,7 @@ for( auto item : v ){
 
 ---
 
-## `max(`_`value1`_`, `_`value2`_`)`
+## `max(value1, value2)`
 
 Returns the larger of the two values.
 
@@ -259,7 +259,7 @@ std::cout << std::max(a, b) << '\n';
 
 ---
 
-## `min(`_`value1`_`, `_`value2`_`)`
+## `min(value1, value2)`
 
 Returns the smaller of the two values.
 
@@ -273,7 +273,7 @@ std::cout << std::min(a, b) << '\n';
 
 ---
 
-## `swap(`_`value1`_`, `_`value2`_`)`
+## `swap(value1, value2)`
 
 Swaps the values stored in the arguments.
 

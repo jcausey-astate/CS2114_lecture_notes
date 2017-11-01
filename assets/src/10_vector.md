@@ -242,3 +242,111 @@ for(auto it = scores.begin(); it != grade_list.end(); it++){
 std::cout << '\n';
 ```
 
+---
+
+## `vector` Modifiers
+
+These are algorithms that `vector`s know how to apply to themselves:
+
+    clear()     : clears all contents (empties the container)          
+    erase()     : erase one element, given an iterator to it          
+    insert()    : inserts element before a position (given an iterator)         
+    pop_back()  : removes the last element              
+    push_back() : adds a new element at the end             
+    resize()    : changes the size of the vector          
+    [...] There are others not shown
+
++++
+
+### `erase(it_target)`
+
+Erases the element pointed to by the iterator `it_target`.
+
+```cpp
+std::vector<int> v{4,8,15,16,23,42,108};
+std::vector<int>::iterator target = v.begin();
+                  // Move target to the third element:
+target += 2;      // by skipping the first two
+
+v.erase(target);  // erases the third element
+
+for( auto value : v ){
+    std::cout << value << '\t';
+}
+// 4  8  16  23  42  108
+```
+
++++
+
+### `insert( it_position, value )`
+
+Inserts `value` at the position pointed to by the iterator `it_position`, shifting current values $\ge$ `it_position` to the right.
+
+```cpp
+std::vector<int> v{4,8,16,23,42,108};
+std::vector<int>::iterator pos = v.begin();
+                   // Move pos to the third element:
+pos += 2;          // by skipping the first two
+
+v.insert(pos, 15); // insert before 16
+
+for( auto value : v ){
+    std::cout << value << '\t';
+}
+// 4  8  15  16  23  42  108
+```
+
++++
+
+### `pop_back(  )`
+
+Removes the last value in the vector.
+
+```cpp
+std::vector<int> v{4,8,15,16,23,42,108};
+
+v.pop_back();
+
+for( auto value : v ){
+    std::cout << value << '\t';
+}
+// 4  8  15  16  23  42
+```
+
++++
+
+### `push_back(  )`
+
+Adds a new value at the end.
+
+```cpp
+std::vector<int> v{4,8,15,16,23,42};
+
+v.push_back(108);
+
+for( auto value : v ){
+    std::cout << value << '\t';
+}
+// 4  8  15  16  23  42  108
+```
+
++++
+
+### `resize(  )`
+
+Changes size of the vector.  Use this to pre-allocate:
+
+```cpp
+std::vector<int> v;
+v.resize(10);
+
+for(int i = 0; i < v.size(); ++i){
+    v[i] = (i+1);
+}
+
+for( auto value : v ){
+    std::cout << value << '\t';
+}
+// 1  2  3  4  5  6  7  8  9  10
+```
+

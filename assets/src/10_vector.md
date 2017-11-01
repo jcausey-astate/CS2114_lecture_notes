@@ -258,6 +258,21 @@ These are algorithms that `vector`s know how to apply to themselves:
 
 +++
 
+### `clear()`
+
+Empties the vector.
+
+```cpp
+std::vector<int> v{4,8,15,16,23,42,108};
+
+v.clear();
+
+std::cout << v.size();
+// 0
+```
+
++++
+
 ### `erase(it_target)`
 
 Erases the element pointed to by the iterator `it_target`.

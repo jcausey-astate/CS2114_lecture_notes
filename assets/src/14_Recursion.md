@@ -155,8 +155,8 @@ $x!$ is defined as follows:
 $$
 x! = 
 \begin{cases}
-1 & \text{ if } x = 1 \text{.} \\\\
-0 & \text{ otherwise. }
+1 & \text{ if } x = 1 \\\\
+x \cdot (x-1)! & \text{ otherwise. }
 \end{cases}
 $$
 
@@ -168,12 +168,13 @@ $$
 <br /><br />
 
 <small>
-$$\begin{equation}
-x!=\begin{cases}
-    1, & \text{if $x=0$}.  \\\\
-    x \cdot (x-1)!, & \text{otherwise}.
-  \end{cases}
-\end{equation}$$
+$$
+x! = 
+\begin{cases}
+1 & \text{ if } x = 1 \\\\
+x \cdot (x-1)! & \text{ otherwise. }
+\end{cases}
+$$
 </small>
 
 <br />

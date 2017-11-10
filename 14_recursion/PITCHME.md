@@ -154,9 +154,9 @@ $x!$ is defined as follows:
 
 $$
 x! = 
-\begin{cases}    
-1, & \text{if} x=0      \\\\ 
-x \cdot (x-1)!, & \text{otherwise} 
+\begin{cases}   
+1, & \text{if} x=0      \\\\
+x \times (x-1)!, & \text{otherwise}
 \end{cases}
 $$
 

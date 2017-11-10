@@ -155,7 +155,8 @@ $x!$ is defined as follows:
 $$
 x! = 
 \begin{cases}
-1 & \text{if} x = 1
+1 & \text{if~} x = 1 \\
+0 & x
 \end{cases}
 $$
 

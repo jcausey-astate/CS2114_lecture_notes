@@ -153,7 +153,10 @@ bool is_even(int n){
 $x!$ is defined as follows:
 
 $$
-x! = 1
+x! = 
+\begin{cases}
+1 & x = 1
+\end{cases}
 $$
 
 ---

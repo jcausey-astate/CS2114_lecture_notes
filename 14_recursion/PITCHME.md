@@ -152,7 +152,7 @@ bool is_even(int n){
 
 $x!$ is defined as follows:
 
-$$\begin{equation}x!=\begin{cases}    1, & \text{if $x=0$}.  \\\\    x \cdot (x-1)!, & \text{otherwise}.  \end{cases} \end{equation}$$
+$$\begin{equation}x!=\begin{cases}    1, & \text{if $x=0$}.      x \cdot (x-1)!, & \text{otherwise}.  \end{cases} \end{equation}$$
 
 
 ---

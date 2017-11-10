@@ -154,6 +154,7 @@ $x!$ is defined as follows:
 
 $$\begin{equation}x!=\begin{cases}    1, & \text{if $x=0$}.      x \cdot (x-1)!, & \text{otherwise}.  \end{cases} \end{equation}$$
 
+$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
 
 ---
 

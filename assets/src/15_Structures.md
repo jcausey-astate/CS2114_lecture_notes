@@ -29,11 +29,11 @@ Enumerated Type
 - Example:
 
 ```cpp
-enum WorkDayAbr = {MON, TUE, WED, 
+enum WorkDayAbr = {MON, TUE, WED,
                    THR, FRI};
- 
+
 //... later in the program ...
- 
+
 WorkDayAbr today = MON;
 ```
 
@@ -48,7 +48,7 @@ WorkDayAbr today = MON;
 - C++11 adds some new abilities (search "C++11 enum" online for info)
 
 ``` cpp
-enum WorkDayAbr = {MON, TUE, WED, 
+enum WorkDayAbr = {MON, TUE, WED,
                    THR, FRI};
 -----------------------------------------
 int rain[5]  = {5, 15, 35, 95, 10};
@@ -146,7 +146,7 @@ You can define your own functions:
 
 ``` cpp
 void printCircle(Circle c){
-    cout << "("      << c.x 
+    cout << "("      << c.x
          << ","      << c.y
          << ") r = " << c.radius;
 }
@@ -156,14 +156,14 @@ void printCircle(Circle c){
 
 ## Structures and Functions
 
-The previous function passed a structure to the `printCircle()` function _by value_. 
+The previous function passed a structure to the `printCircle()` function _by value_.
 
 - Is this a good idea?
 - Consider passing by (`const`) reference instead:
 
 ``` cpp
 void printCircle(const Circle& c){
-    cout << "("      << c.x 
+    cout << "("      << c.x
          << ","      << c.y
          << ") r = " << c.radius;
 }
@@ -180,7 +180,7 @@ void readCircle(Circle& c){
 ## Parallel Arrays VS Structures
 
 - Parallel arrays store related data by common indexing.
-- Structures store related data in a single variable...  
+- Structures store related data in a single variable...
     - An array of structures can be used in place of parallel arrays.
 - When should you choose structures?
     - How closely are the data related?
@@ -196,11 +196,11 @@ void readCircle(Circle& c){
 (SPOILER ALERT!) You can also overload operators (and other functions) so that they will work with your new type:
 
 ``` cpp
-std::ostream& operator<< (std::ostream& outstr,     
+std::ostream& operator<< (std::ostream& outstr,
                           const Circle& c)
 {
-    outstr << "("      << c.x 
-           << ","      << c.y 
+    outstr << "("      << c.x
+           << ","      << c.y
            << ") r = " << c.radius;
     return outstr;
 }
@@ -292,9 +292,9 @@ strncpy(p2copy.name, "Beth", 30);
 
 cout << "p1: " << p1.name << " p1copy: " << p1copy.name << endl;
 cout << "p2: " << p2.name << " p2copy: " << p2copy.name << endl;
-// 
+//
 // What will print out ???
-// 
+//
 ```
 
 <!-- .slide: data-transition="none", data-background="aliceblue" -->
@@ -343,7 +343,7 @@ cout << "p2: " << p2.name << " p2copy: " << p2copy.name << endl;
 
 ---
 
-## Initial Values 
+## Initial Values
 
 C++11 added the ability to include _initialization_ in a structure definition:
 

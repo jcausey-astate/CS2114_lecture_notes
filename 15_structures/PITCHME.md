@@ -75,9 +75,9 @@ Structures are used to "glue" several other types together to create a new type.
 
 <pre>
 struct Circle {
-    int    x;
-    int    y;
-    double radius;
+   int x;
+   int y;
+   double radius;
 };  // Notice the semicolon!
 </pre>
 

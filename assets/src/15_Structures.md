@@ -29,8 +29,7 @@ Enumerated Type
 - Example:
 
 ```cpp
-enum WorkDayAbr = {MON, TUE, WED,
-                   THR, FRI};
+enum WorkDayAbr = {MON, TUE, WED, THR, FRI};
 
 //... later in the program ...
 
@@ -47,7 +46,7 @@ WorkDayAbr today = MON;
 - Limited to creation of custom literals (you cannot really create a complex data type using `enum`).
 - C++11 adds some new abilities (search "C++11 enum" online for info)
 
-``` cpp
+```cpp
 enum WorkDayAbr = {MON, TUE, WED,
                    THR, FRI};
 -----------------------------------------
@@ -74,8 +73,8 @@ Structures are used to "glue" several other types together to create a new type.
 - Structures specify attributes, but (usually) not behaviors.
 - The keyword `struct` is used to define a structure:
 
-``` cpp
-struct Circle{
+```cpp
+struct Circle {
     int    x;
     int    y;
     double radius;
@@ -91,13 +90,13 @@ struct Circle{
 - The variables declared in a structure definition are called _attributes_ (or sometimes "members").
 - You can create a variable (or _instance_) of the new type:
 
-``` cpp
+```cpp
 Circle unitCircle;
 ```
 
 - Then you can access its attributes using "_dot notation_":
 
-``` cpp
+```cpp
 unitCircle.x      = 0;
 unitCircle.y      = 0;
 unitCircle.radius = 1.0;
@@ -110,7 +109,7 @@ unitCircle.radius = 1.0;
 - The _member access operator_ (AKA the "dot operator"): &nbsp;&nbsp;&nbsp; **`  .  `**
 - You can initialize a structure using something similar to array initializer syntax:
 
-``` cpp
+```cpp
 Circle anotherCircle = {3, 2, 2.4}; // old style, deprecated
 ```
 
@@ -123,7 +122,7 @@ Circle yetAnotherCircle{2, 3, 3.8}; // uniform, preferred
 - Notice that the order of items in the list matters!
 - You can find out the size of a structure using `sizeof()`:
 
-``` cpp
+```cpp
 cout << sizeof(yetAnotherCircle);  // using an instance
 // ... or ...
 cout << sizeof(Circle);            // using the type
@@ -137,14 +136,14 @@ _**Structures create a new type!**_
 
 No built-in functions or operators will work with the new type by default:
 
-``` cpp
+```cpp
 Circle myCircle{1, 2, 3.1};
 cout << myCircle << endl;   // Will NOT work!
 ```
 
 You can define your own functions:
 
-``` cpp
+```cpp
 void printCircle(Circle c){
     cout << "("      << c.x
          << ","      << c.y
@@ -161,7 +160,7 @@ The previous function passed a structure to the `printCircle()` function _by val
 - Is this a good idea?
 - Consider passing by (`const`) reference instead:
 
-``` cpp
+```cpp
 void printCircle(const Circle& c){
     cout << "("      << c.x
          << ","      << c.y
@@ -195,7 +194,7 @@ void readCircle(Circle& c){
 
 (SPOILER ALERT!) You can also overload operators (and other functions) so that they will work with your new type:
 
-``` cpp
+```cpp
 std::ostream& operator<< (std::ostream& outstr,
                           const Circle& c)
 {

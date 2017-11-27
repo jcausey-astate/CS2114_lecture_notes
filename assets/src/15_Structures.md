@@ -114,10 +114,10 @@ unitCircle.radius = 1.0;
 Circle anotherCircle = {3, 2, 2.4}; // old style, deprecated
 ```
 
-<small style="font-size: 85%;">Or with C++11's **_universal intializer syntax_**:  (**preferred**)</small>
+<small style="font-size: 85%;">Or with C++11's **_uniform intializer syntax_**:  (**preferred**)</small>
 
 ```cpp
-Circle yetAnotherCircle{2, 3, 3.8}; // universal, preferred
+Circle yetAnotherCircle{2, 3, 3.8}; // uniform, preferred
 ```
 
 - Notice that the order of items in the list matters!
@@ -225,169 +225,44 @@ What happens when you _assign_ one structure to another directly?
 
 ---
 
-### Example: Two Versions of a Person
-
-``` cpp
-// Version 1 uses a C++ array   // Version 2 uses a dynamically-
-// as a c-string for name:      // allocated c-string for name:
-struct PersonV1{                struct PersonV2{
-    int  age;                       int   age;
-    char name[30];                  char* name;
-};                              };
-```
-
-- What is the `sizeof()` each of these structures?
-- Are there any logical differences in the interpretation of each?
-    + What about implementation differences?
-
-<!-- .slide: data-transition="slide", data-background="aliceblue" -->
-
----
-
-<!-- .slide: data-transition="slide", data-background="aliceblue" -->
-
-### Example: Two Versions of a Person
-
-``` cpp
-// Version 1 uses a C++ array   // Version 2 uses a dynamically-
-// as a c-string for name:      // allocated c-string for name:
-struct PersonV1{                struct PersonV2{
-    int  age;                       int   age;
-    char name[30];                  char* name;
-};                              };
-//-------------------------
-IN MAIN: ---------------------------------
-PersonV1 p1, p1copy;
-PersonV2 p2, p2copy;
-
-p1.age = 10;
-strncpy(p1.name, "Adam", 30);
-
-p2.age = 20;
-p2.name = new char[30];
-strncpy(p2.name, "Alice", 30);
-```
-
----
-
-<!-- .slide: data-transition="slide", data-background="aliceblue" -->
-
-### Example: Two Versions of a Person
-
-``` cpp
-struct PersonV1{                struct PersonV2{
-    int  age;                       int   age;
-    char name[30];                  char* name;
-};                              };
-//-------------------------
-IN MAIN: ---------------------------------
-PersonV1 p1, p1copy; // p1 name is "Adam"
-PersonV2 p2, p2copy; // p2 name is "Alice"
-// [...]
-p1copy = p1;
-strncpy(p1copy.name, "Billy", 30);
-
-p2copy = p2;
-strncpy(p2copy.name, "Beth", 30);
-
-cout << "p1: " << p1.name << " p1copy: " << p1copy.name << endl;
-cout << "p2: " << p2.name << " p2copy: " << p2copy.name << endl;
-//
-// What will print out ???
-//
-```
-
-<!-- .slide: data-transition="none", data-background="aliceblue" -->
-
----
-
-<!-- .slide: data-transition="none", data-background="aliceblue" -->
-
-### Example: Two Versions of a Person
-
-``` cpp
-struct PersonV1{                struct PersonV2{
-    int  age;                       int   age;
-    char name[30];                  char* name;
-};                              };
-//-------------------------
-IN MAIN: ---------------------------------
-PersonV1 p1, p1copy; // p1 name is "Adam"
-PersonV2 p2, p2copy; // p2 name is "Alice"
-// [...]
-p1copy = p1;
-strncpy(p1copy.name, "Billy", 30);
-
-p2copy = p2;
-strncpy(p2copy.name, "Beth", 30);
-
-cout << "p1: " << p1.name << " p1copy: " << p1copy.name << endl;
-cout << "p2: " << p2.name << " p2copy: " << p2copy.name << endl;
-// Prints:   p1: Adam p1copy: Billy
-//           p2: Beth p2copy: Beth
-// WHAT WENT WRONG ???
-```
-
-
----
-
-
-### Two Versions of a Person: Conclusion
-
-- The copy of `p1` to `p1copy` is fine, since the array in `PersonV1` is a statically-sized array.
-    + The structure encapuslates the entire array, and bitwise copy is OK.
-- The copy of `p2` to `p2copy` was __broken__, since `PersonV2` uses a _pointer_ to a dynamically-allocated c-string array.
-    + The _pointer_ was copied, but not the _data_ or the _allocated space_!
-        * This is referred to as a _shallow copy_.
-        * We really want a _deep copy_ (which allocates more space and makes a true copy of the contents).
-
----
-
 ## Initial Values
 
 C++11 added the ability to include _initialization_ in a structure definition:
 
 ```cpp
-struct PersonV1 {
-    int  age      = 0;    // initialize to 0
-    char name[30] = {0};  // "trick" sets elements to '\0'
-};
-struct PersonV2 {
-    int   age  = 0;       // initialize to 0
-    char* name = nullptr; // null the pointer
+struct Person {
+    int    age   = 0;    // initialize to 0
+    string name;
 };
 ```
 
-Here, _assignment initializer syntax_ is used to provide initial values for all members of both structures.
+Here, _assignment initializer syntax_ is used to provide initial values for `age`.
 
-**If you specify initializers, you will not be able to use _universal initializer syntax_ with your new type.**
+**If you specify initializers, you will not be able to use _uniform initializer syntax_ with your new type in C++11, but in C++14 and afterward, it is OK.**
 
 ```cpp
-PersonV1 p3{20, "Cassandra"}; // will NOT work
+Person p3{20, "Cassandra"}; // will NOT work
 ```
 
 +++
-### (optional) Initial Values (Universal Syntax)
 
-You can also set initial values using _universal initializer syntax_:
+### (optional) Initial Values (Uniform Syntax)
+
+You can also set initial values using _uniform initializer syntax_:
 
 ```cpp
-struct PersonV1 {
-    int  age{0};         // initialize to 0
-    char name[30]{0};    // "trick" sets elements to '\0'
-};
-struct PersonV2 {
-    int   age{0};        // initialize to 0
-    char* name{nullptr}; // null the pointer
+struct Person {
+    int    age{0};         // initialize to 0
+    string name;
 };
 ```
 
-Here, _universal initializer syntax_ is used to provide initial values for all members of both structures.
+Here, _uniform initializer syntax_ is used to provide initial values for all members of both structures.
 
-**If you specify initializers, you will not be able to use _universal initializer syntax_ with your new type.**
+**If you specify initializers, you will not be able to use _uniform initializer syntax_ with your new type in C++11, but in C++14 and afterward, it is OK.**
 
 ```cpp
-PersonV1 p3{20, "Cassandra"}; // will NOT work
+Person p3{20, "Cassandra"}; // will NOT work
 ```
 
 

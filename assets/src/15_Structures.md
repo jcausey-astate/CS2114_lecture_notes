@@ -241,7 +241,7 @@ Here, _assignment initializer syntax_ is used to provide initial values for `age
 **If you specify initializers, you will not be able to use _uniform initializer syntax_ with your new type in C++11, but in C++14 and afterward, it is OK.**
 
 ```cpp
-Person p3{20, "Cassandra"}; // will NOT work
+Person p3{20, "Cassandra"}; // only if -std=c++14 or later
 ```
 
 +++
@@ -262,7 +262,7 @@ Here, _uniform initializer syntax_ is used to provide initial values for all mem
 **If you specify initializers, you will not be able to use _uniform initializer syntax_ with your new type in C++11, but in C++14 and afterward, it is OK.**
 
 ```cpp
-Person p3{20, "Cassandra"}; // will NOT work
+Person p3{20, "Cassandra"}; // only if -std=c++14 or later
 ```
 
 

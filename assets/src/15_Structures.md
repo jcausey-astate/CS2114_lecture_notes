@@ -73,13 +73,13 @@ Structures are used to "glue" several other types together to create a new type.
 - Structures specify attributes, but (usually) not behaviors.
 - The keyword `struct` is used to define a structure:
 
-~~~cpp
+<pre>
 struct Circle {
     int    x;
     int    y;
     double radius;
 };  // Notice the semicolon!
-~~~
+</pre>
 
 
 ---

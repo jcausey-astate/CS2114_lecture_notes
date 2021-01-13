@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CS2114 Lecture Notes</title>
+    <link>https://jcausey-astate.github.io/CS2114_lecture_notes/</link>
+    <description>Recent content on CS2114 Lecture Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://jcausey-astate.github.io/CS2114_lecture_notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Supplement: Streams</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/supplement_streams/</link>
+      <pubDate>Sun, 04 Oct 2020 16:30:22 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/supplement_streams/</guid>
+      <description>C++ Streams Supplement  The Streams You Know std::cin and std::cout You are already familliar with the standard input and standard output streams (cin and cout, respectively). But, you may not have considered much beyond the simplest basics about how they work.
+This supplement will talk about how C++ supports a whole family of streams and stream-like objects, and how they work on a conceptual level that may help you when you run into confusion with stream-processing tasks.</description>
+    </item>
+    
+    <item>
+      <title>Easy_rand</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/supplement_easy_rand/</link>
+      <pubDate>Fri, 02 Oct 2020 12:30:16 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/supplement_easy_rand/</guid>
+      <description>&amp;lt;/small&amp;gt;</description>
+    </item>
+    
+  </channel>
+</rss>

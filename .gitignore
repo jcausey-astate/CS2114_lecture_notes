@@ -1,2 +1,7 @@
-.DS_Store
-.sync
+**/.DS_Store
+**/__MACOS__
+**/*.bak
+**/~*
+**/.vscode
+themes/.git
+favicon_src.pxd

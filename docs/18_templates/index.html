@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="icon" type="image/vnd.microsoft.icon" sizes="32x32" href="https://jcausey-astate.github.io/CS2114_lecture_notes/favicon.ico">
+	<link rel="stylesheet" href="https://jcausey-astate.github.io/CS2114_lecture_notes/css/remark.css" />
+	<link rel="stylesheet" href="https://jcausey-astate.github.io/CS2114_lecture_notes/css/prog-courses.css" />
+
+</head>
+
+
+<body>
+    <textarea id="source" class="three-col">
+
+
+# Function Templates
+
+## Ch. 16.2-16.4
+
+
+---
+
+
+## Function Templates
+
+- Function templates allow us to practice _generic programming_ in C&#43;&#43;.
+    &#43; Many algorithms do not depend on the type of data being operated on.
+    &#43; Why should we be forced to overload these functions for every new type of data?
+   
+
+---
+
+
+## Function Templates
+    
+    
+- _Function templates_ provide a pattern for a function that can work with many types of data.
+- When written, the data type specifiers are replaced with type parameters.
+- When called, the compiler generates a function with actual data types that match those provided in the call.
+    &#43; The overload still happens, but _the compiler does the work_, not the programmer! 
+
+
+---
+
+
+## Example
+
+&lt;!-- .slide: data-state=&#34;code-example&#34; --&gt;
+
+``` cpp
+template &lt;class NumericType&gt;
+NumericType times10(NumericType num){
+    return 10 * num;
+}
+```
+
+- `NumericType` is the _type parameter_ (it can be any valid identifier, but is usually capitalized by convention).
+- __Tip:__ Write the function for a normal data type first, then convert to a function template!
+
+&lt;!-- .slide: data-transition=&#34;linear&#34;, data-state=&#34;code-example&#34; --&gt;
+
+---
+&lt;!-- .slide: data-transition=&#34;none&#34;, data-state=&#34;code-example&#34; --&gt;
+
+## Example 2: Print Array
+
+``` cpp
+  
+void print_array(const int a[], int size){
+    for(int i = 0; i &lt; size; i&#43;&#43;){
+        cout &lt;&lt; a[i] &lt;&lt; &#34;\n&#34;;
+    }
+}
+```
+
+Start with a known data type: (`int`) array in this case.
+
+&lt;!-- .slide: data-transition=&#34;none&#34;, data-state=&#34;code-example&#34; --&gt;
+
+---
+&lt;!-- .slide: data-transition=&#34;none&#34;, data-state=&#34;code-example&#34; --&gt;
+
+## Example 2: Print Array
+
+
+``` cpp
+template &lt;class ValueType&gt;
+void print_array(const ValueType a[], int size){
+    for(int i = 0; i &lt; size; i&#43;&#43;){
+        cout &lt;&lt; a[i] &lt;&lt; &#34;\n&#34;;
+    }
+}
+```
+
+Here, we have replaced _only the data type(s) that should be generic_ with a template parameter.
+
+- Be careful not to replace data types that _should not be generic_ (like loop counters and sizes)!
+- Constraints on data:
+    &#43; Must be _stream-insertable_ ( `operator&lt;&lt;` )
+    &#43; C&#43;&#43;11 - C&#43;&#43;17 call these _**concepts**_. &lt;br /&gt;&lt;small&gt;  See http://en.cppreference.com/w/cpp/concept&lt;/small&gt;
+
+&lt;!-- .slide: data-transition=&#34;none&#34;, data-state=&#34;code-example&#34; --&gt;
+
+---
+&lt;!-- .slide: data-transition=&#34;none&#34;, data-state=&#34;code-example&#34; --&gt;
+
+## Example 3: Parallel Arrays
+
+``` cpp
+
+void printKeyValuePairs(const string keys[], 
+                        const int    values[], 
+                        int          size){
+    for(int i = 0; i &lt; size; i&#43;&#43;){
+        cout &lt;&lt; keys[i] &lt;&lt; &#34;:\t&#34; &lt;&lt; values[i] &lt;&lt; &#34;\n&#34;;
+    }
+}
+```
+
+Again, the function could be more general if `keys` and `values` could be _anything_.
+
+- Notice that the type of `keys` and `values` _should_ be independent of one another.
+
+&lt;!-- .slide: data-transition=&#34;none&#34;, data-state=&#34;code-example&#34; --&gt;
+
+---
+&lt;!-- .slide: data-transition=&#34;none&#34;, data-state=&#34;code-example&#34; --&gt;
+
+## Example 3: Parallel Arrays
+
+``` cpp
+template &lt;class KeyType, class ValueType&gt;
+void printKeyValuePairs(const KeyType   keys[], 
+                        const ValueType values[], 
+                        int             size){
+    for(int i = 0; i &lt; size; i&#43;&#43;){
+        cout &lt;&lt; keys[i] &lt;&lt; &#34;:\t&#34; &lt;&lt; values[i] &lt;&lt; &#34;\n&#34;;
+    }
+}
+```
+
+- Use two type parameters (one for each independent type required)
+- Constraints on data:
+    &#43; Must be _stream-insertable_ ( `operator&lt;&lt;` )
+
+
+
+
+---
+
+## Function Template Notes
+
+
+- Multiple type parameters can be used.
+- Function templates can be overloaded (as long as each overload has a unique signature).
+- All type parameters specified in template prefix must be used in the definition.
+
+---
+&lt;!-- .slide: data-transition=&#34;none&#34;, data-state=&#34;code-example&#34; --&gt;
+
+### Example 4: Array Library
+
+**`array_utilities.h`**
+&lt;small style=&#34;font-size: 90%;&#34;&gt;
+
+```cpp
+#ifndef ARRAY_UTILITIES_H
+#define ARRAY_UTILITIES_H
+
+template &lt;class ValueType&gt;
+void array_fill(ValueType value, ValueType array[], int size){
+    for(int i = 0; i &lt; size; i&#43;&#43;){                  // place `value`
+        array[i] = value;                           // into each 
+    }                                               // element
+}
+
+template &lt;class ValueType&gt;
+ValueType array_sum(ValueType array[], int size){
+    ValueType sum = array[0];                       // don&#39;t use 0!
+    for(int i = 1; i &lt; size; i&#43;&#43;){                  // now sum all
+        sum = sum &#43; array[i];                       // remaining 
+    }                                               // elements
+    return sum;                                     
+}
+#endif
+```
+
+&lt;/small&gt;
+
+---
+&lt;!-- .slide: data-transition=&#34;none&#34;, data-state=&#34;code-example&#34; --&gt;
+
+**`main.cpp`**
+
+&lt;small style=&#34;font-size: 90%;&#34;&gt;
+
+```cpp
+#include &lt;iostream&gt;
+#include &#34;array_utilities.h.&#34;
+
+int main(){
+    int a[]{ 2, 4, 6, 8, 10 };                      // 5 even values
+    
+    int sum = array_sum(a, 5);                      // add it up
+    std::cout &lt;&lt; &#34;Sum:            &#34; &lt;&lt; sum &lt;&lt; &#34;\n&#34;; // : 30
+
+    array_fill(1, a, 5);                            // fill with 1&#39;s
+    sum = array_sum(a, 5);                          // re-do sum
+    std::cout &lt;&lt; &#34;Sum after fill: &#34; &lt;&lt; sum &lt;&lt; &#34;\n&#34;; // : 5
+
+    return 0;
+}
+```
+
+&lt;/small&gt;
+
+---
+&lt;!-- .slide: data-transition=&#34;none&#34;, data-state=&#34;code-example&#34; --&gt;
+
+**`array_utilities.h` - Function Docs Example**
+&lt;small style=&#34;font-size: 90%;&#34;&gt;
+
+```cpp
+#ifndef ARRAY_UTILITIES_H
+#define ARRAY_UTILITIES_H
+
+/**
+ * fill all elements in `array` with the given `value` 
+ *
+ * @remark     `ValueType`  type must be CopyAssignable.
+ *
+ * @tparam     ValueType    type of values contained in `array`
+ *
+ * @param      value        the value to place in all elements
+ * @param[out] array        the array to fill
+ * @param      size         size of `array`
+ */
+template &lt;class ValueType&gt;
+void array_fill(ValueType value, ValueType array[], int size){
+    for(int i = 0; i &lt; size; i&#43;&#43;){                  // place `value`
+        array[i] = value;                           // into each 
+    }                                               // element
+}
+
+[...]
+```
+
+&lt;/small&gt;
+
+
+
+</textarea>
+    <script src="https://jcausey-astate.github.io/CS2114_lecture_notes/js/remark-latest.min.js"></script>
+<script src='https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML' type="text/javascript"></script>
+<script>
+	var slideshow = remark.create();
+
+	
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']],
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+		}
+	});
+	MathJax.Hub.Queue(function () {
+		$(MathJax.Hub.getAllJax()).map(function (index, elem) {
+			return (elem.SourceElement());
+		}).parent().addClass('has-jax');
+	});
+
+	MathJax.Hub.Configured();
+</script>
+</body>
+
+</html>

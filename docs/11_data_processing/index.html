@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="icon" type="image/vnd.microsoft.icon" sizes="32x32" href="https://jcausey-astate.github.io/CS2114_lecture_notes/favicon.ico">
+	<link rel="stylesheet" href="https://jcausey-astate.github.io/CS2114_lecture_notes/css/remark.css" />
+	<link rel="stylesheet" href="https://jcausey-astate.github.io/CS2114_lecture_notes/css/prog-courses.css" />
+
+</head>
+
+
+<body>
+    <textarea id="source" class="three-col">
+
+# Data Processing
+## Featuring: STL Algorithms
+
+---
+
+## Algorithms
+
+STL contains algorithms implemented as function templates.
+
+- Designed to perform operations on containers.
+- Requires algorithm header file  `#include &lt;algorithm&gt;`
+- Includes:
+
+        accumulate()      max()
+        binary_search()   max_element()
+        copy()            min()
+        count()           min_element()
+        fill()            reverse()
+        find()            sort()
+        is_sorted()       swap()
+
+            ... and many more ...
+
+---
+
+## Algorithms Overview
+
+* Algorithms use _iterators_ for operating on _ranges_ of values in a container.
+* Most will take (at least) a &#34;first&#34; and &#34;last&#34; iterator:
+
+![Sub-range in array](../images/shared/range_iterators_to_subrange.svg)
+
+---
+
+## Usually use `begin` and `end`
+
+* If you want the entire container, then&lt;br&gt;`first = container.begin()` and `last = container.end()`.
+
+![Range based iterators](../images/shared/range_iterators_in_array.svg)
+
+---
+
+Container-wise algorithms:
+
+        accumulate()        is_sorted()
+        binary_search()     max_element()
+        copy()              min_element()
+        count()             reverse()
+        fill()              sort()
+        find()
+
+Element-wise algorithms:
+
+        max()               swap()
+        min()
+
+---
+
+### `accumulate(first, last, start_value)`
+&lt;br&gt;&lt;br&gt;
+
+
+Returns the sum of the range [`first`,`last`), starting from the initial value `start_value`.
+
+```cpp
+std::vector&lt;int&gt; v{5,3,4,2,9,2,6,3,8};
+
+int sum = std::accumulate(v.begin(), v.end(), 0);
+std::cout &lt;&lt; sum &lt;&lt; &#39;\n&#39;;
+// 42
+```
+
+---
+
+### `binary_search(first, last, target)`
+&lt;br&gt;&lt;br&gt;
+
+
+Fast search in range for `target`; requires range to be sorted.  Returns `true` if the target is found, `false` otherwise.
+
+```cpp
+std::vector&lt;int&gt; v{0,2,4,6,8,10,12,14,16,18};
+
+bool found = std::binary_search(v.begin(), v.end(), 10);
+if( found ){
+    std::cout &lt;&lt; &#34;Found 10.\n&#34;;
+}
+// Found 10
+found = std::binary_search(v.begin(), v.end(), 9);
+if( found ){
+    std::cout &lt;&lt; &#34;Found 9.\n&#34;;
+}
+// (9 was not found, no output)
+```
+
+---
+
+### `copy(src_first, src_last, dst_first)`
+&lt;br&gt;&lt;br&gt;
+
+
+Copies range [`src_first`,`src_last`) to destination starting at `dst_first`.
+
+```cpp
+std::vector&lt;int&gt; v1{5,3,4,2,9,2,6,3,8};
+std::vector&lt;int&gt; v2;
+v2.resize(v1.size());  // Destination must be pre-allocated!
+
+std::copy(v1.begin(), v1.end(), v2.begin());
+
+for( auto item : v2 ){
+    std::cout &lt;&lt; item &lt;&lt; &#39;\t&#39;;
+}
+// 5  3  4  2  9  2  6  3  8
+```
+
+Note that invalid arguments cause _**undefined behavior**_.
+
+---
+
+### `count(first, last, target)`
+&lt;br&gt;&lt;br&gt;
+
+
+Count the number of times `target` appears in the range.
+
+```cpp
+std::vector&lt;int&gt; v{5,2,4,2,9,2,6,3,8};
+
+int number_of_twos = std::count(v.begin(), v.end(), 2);
+
+std::cout &lt;&lt; &#34;There are &#34; &lt;&lt; number_of_twos &lt;&lt; &#34; twos.\n&#34;;
+// There are 3 twos.
+```
+
+---
+
+### `fill(first, last, value)`
+&lt;br&gt;&lt;br&gt;
+
+
+Fill a range with a single value.
+
+```cpp
+std::vector&lt;int&gt; v;
+v.resize(10);
+
+std::fill(v.begin(), v.end(), -1);
+
+for( auto item : v ){
+    std::cout &lt;&lt; item &lt;&lt; &#39;\t&#39;;
+}
+// -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+```
+
+---
+
+### `find(first, last, target)`
+&lt;br&gt;&lt;br&gt;
+
+
+Find &#34;target&#34; element; returns an iterator to the target or `last` if not found.
+
+```cpp
+std::vector&lt;int&gt; v{5,3,4,2,9,2,6,3,8};
+
+std::vector&lt;int&gt;::iterator it;
+it = std::find(v.begin(), v.end(), 9);
+
+if(it != v.end()){
+    std::cout &lt;&lt; &#34;Found &#34; &lt;&lt; (*it) &lt;&lt; &#39;\n&#39;;
+}
+// Found 9
+```
+
+---
+
+### `is_sorted(first, last)`
+&lt;br&gt;&lt;br&gt;
+
+
+Returns `true` if the range is sorted; `false` otherwise.
+
+```cpp
+std::vector&lt;int&gt; v1{5,3,4,2,9,2,6,3,8};
+std::vector&lt;int&gt; v2{0,1,2,3,4,5,6,7,8,9};
+
+if( std::is_sorted(v1.begin(), v1.end())){
+    std::cout &lt;&lt; &#34;v1 is sorted\n&#34;;
+}
+
+if( std::is_sorted(v2.begin(), v2.end())){
+    std::cout &lt;&lt; &#34;v2 is sorted\n&#34;;
+}
+// v2 is sorted
+```
+
+---
+
+### `max_element(first, last)`
+&lt;br&gt;&lt;br&gt;
+
+
+Returns an iterator to the (first) maximum element.
+
+```cpp
+std::vector&lt;int&gt; v{5,3,4,2,9,2,6,3,8};
+
+std::vector&lt;int&gt;::iterator it;
+it = std::max_element(v.begin(), v.end());
+
+std::cout &lt;&lt; (*it) &lt;&lt; &#39;\n&#39;;
+// 9
+```
+
+---
+
+### `min_element(first, last)`
+&lt;br&gt;&lt;br&gt;
+
+
+Returns an iterator to the (first) minimum element.
+
+```cpp
+std::vector&lt;int&gt; v{5,3,4,2,9,2,6,3,8};
+
+std::vector&lt;int&gt;::iterator it;
+it = std::min_element(v.begin(), v.end());
+
+std::cout &lt;&lt; (*it) &lt;&lt; &#39;\n&#39;;
+// 2
+```
+
+---
+
+### `reverse(first, last)`
+&lt;br&gt;&lt;br&gt;
+
+
+Reverses the order of values in the range.
+
+```cpp
+std::vector&lt;int&gt; v{0,1,2,3,4,5,6,7,8,9};
+
+std::reverse(v.begin(), v.end());
+
+for( auto item : v ){
+    std::cout &lt;&lt; item &lt;&lt; &#39;\t&#39;;
+}
+// 9  8  7  6  5  4  3  2  1  0
+```
+
+---
+
+### `sort(first, last)`
+&lt;br&gt;&lt;br&gt;
+
+
+Sorts a container in-place.
+
+```cpp
+std::vector&lt;int&gt; v{5,2,4,9,7,1,6,3,0,8};
+
+std::sort(v.begin(), v.end());
+
+for( auto item : v ){
+    std::cout &lt;&lt; item &lt;&lt; &#39;\t&#39;;
+}
+// 0  1  2  3  4  5  6  7  8  9
+```
+
+---
+
+### `max(value1, value2)`
+&lt;br&gt;&lt;br&gt;
+
+
+Returns the larger of the two values.
+
+```cpp
+int a = 8;
+int b = 12;
+
+std::cout &lt;&lt; std::max(a, b) &lt;&lt; &#39;\n&#39;;
+// 12
+```
+
+---
+
+### `min(value1, value2)`
+&lt;br&gt;&lt;br&gt;
+
+
+Returns the smaller of the two values.
+
+```cpp
+int a = 8;
+int b = 12;
+
+std::cout &lt;&lt; std::min(a, b) &lt;&lt; &#39;\n&#39;;
+// 8
+```
+
+---
+
+### `swap(value1, value2)`
+&lt;br&gt;&lt;br&gt;
+
+
+Swaps the values stored in the arguments.
+
+```cpp
+int a = 8;
+int b = 12;
+
+std::swap(a, b);
+std::cout &lt;&lt; &#34;a: &#34; &lt;&lt; a &lt;&lt; &#34; b: &#34; &lt;&lt; b &lt;&lt; &#39;\n&#39;;
+// a: 12 b: 8
+```
+
+
+
+</textarea>
+    <script src="https://jcausey-astate.github.io/CS2114_lecture_notes/js/remark-latest.min.js"></script>
+<script src='https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML' type="text/javascript"></script>
+<script>
+	var slideshow = remark.create();
+
+	
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']],
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+		}
+	});
+	MathJax.Hub.Queue(function () {
+		$(MathJax.Hub.getAllJax()).map(function (index, elem) {
+			return (elem.SourceElement());
+		}).parent().addClass('has-jax');
+	});
+
+	MathJax.Hub.Configured();
+</script>
+</body>
+
+</html>

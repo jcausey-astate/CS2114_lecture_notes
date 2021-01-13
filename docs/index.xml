@@ -7,6 +7,261 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jcausey-astate.github.io/CS2114_lecture_notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>00: Why C&#43;&#43;?</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/00_why_cpp/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/00_why_cpp/</guid>
+      <description>background-image: url(../images/why_cpp/Why_Arizona.jpg)
+ background-image: url(../images/why_cpp/Why_Arizona.jpg)
+Source: http://www.tiobe.com/tiobe-index/
+ C-Like Languages  &amp;ldquo;Popular&amp;rdquo; C-Like Languages  Where do you use it?  Desktop Apps:  C++, Java, Objective-C, Swift, D, Go, &amp;hellip;   Mobile Apps:  Swift, Java, Objective-C, C++, C#, ECMAscript &amp;hellip;   Web / &amp;ldquo;Cloud&amp;rdquo;:  ECMAscript, PHP, Go, Swift, Perl, Java, Dart, C#, &amp;hellip;     </description>
+    </item>
+    
+    <item>
+      <title>01: Structured Programming Basics</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/01_sp_basics/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/01_sp_basics/</guid>
+      <description>StructuredProgrammingBasics CS2114 (Ch. 1, 2)  First Principles  computer - a programmable machine designed to follow instructions  Computers are able to perform mathematical and logical operations at great speed.   algorithm - a precise, step-by-step plan for solving a problem program - a set of instructions expressed in a programming language that a computer follows to perform a task programmer - a person who writes a computer program programming language - any language designed specifically for use in creating computer programs   A computer is simply a re-configurable mechanical tool.</description>
+    </item>
+    
+    <item>
+      <title>02: Variables, Operators, Common Errors</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/02_variables_operators_errors/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/02_variables_operators_errors/</guid>
+      <description>Variables Operators Common Errors CS2114 (Ch. 2)  The Big Picture All programming languages must provide certain functionality:
+ Temporary data storage and retrieval.  How is data stored in RAM?   Operators that can be applied to the data.  What can I do to manipulate the data, and how?   Input and Output  Where does the data come from, and how?   Control Structures  Conditional execution and repetition.</description>
+    </item>
+    
+    <item>
+      <title>03: Input and Output</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/03_input_and_output/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/03_input_and_output/</guid>
+      <description>Input and Output CS2114 (Ch. 3, 5.11)  Review: Output Streams Recall that a stream is a one-way flow of information. Output streams are streams that take information from the running program and move it to the outside world.
+ The standard output stream is named std::cout  Often shortened to cout (add using std::cout; after the include) We will refer to the standard output stream as cout in discussion.   Output streams work together with the stream insertion operator ( &amp;lt;&amp;lt; ).</description>
+    </item>
+    
+    <item>
+      <title>04: Formatted Output</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/04_formatted_output_getline_cmath/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/04_formatted_output_getline_cmath/</guid>
+      <description>Formatted Output,getline(), &amp;lt;cmath&amp;gt; CS2114 (Ch. 2, 3)  Formatted Output The &amp;lt;iomanip&amp;gt; library supplies a set of stream manipulators that may be used in conjunction with the stream insertion operator to format output.
+ Example double price = 100.0 / 3.0; // 33.3333333... std::cout &amp;lt;&amp;lt; std::setprecision(2) &amp;lt;&amp;lt; std::fixed; std::cout &amp;lt;&amp;lt; &amp;#34;Total price: $&amp;#34; &amp;lt;&amp;lt; std::setw(8) &amp;lt;&amp;lt; price &amp;lt;&amp;lt; &amp;#34;\n&amp;#34;; std::cout &amp;lt;&amp;lt; &amp;#34;100 items: $&amp;#34; &amp;lt;&amp;lt; std::setw(8) &amp;lt;&amp;lt; 100 * price &amp;lt;&amp;lt; &amp;#34;\n&amp;#34;; Output:</description>
+    </item>
+    
+    <item>
+      <title>04: Recursion</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/14_recursion/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/14_recursion/</guid>
+      <description>Recursion CS2114 (Ch. 6 &amp;amp; 19)  Recursion A function is said to be recursive if it contains a call to itself.
+ Recursive definitions are often more &amp;ldquo;natural&amp;rdquo;.  Embodies a &amp;ldquo;divide-and-conquer&amp;rdquo; strategy    void countDown(int timer) { if (timer == 0) { std::cout &amp;lt;&amp;lt; &amp;#34;Blastoff!&amp;#34;; } else{ std::cout &amp;lt;&amp;lt; timer &amp;lt;&amp;lt; &amp;#34;...\n&amp;#34;; countDown(timer-1); // recursive call  } }  Tracing a Recursive Call
+ Purpose  Recursion is an alternative way to achieve repetition.</description>
+    </item>
+    
+    <item>
+      <title>05: Selection</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/05_selection/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/05_selection/</guid>
+      <description>Selection CS2114 (Ch. 4)  Making Decisions One of the things computers are &amp;ldquo;good at&amp;rdquo; is determining the result of logic-based (Boolean) expressions, and using those results to make decisions quickly.
+ Choose to whether or not to perform an operation.  If it is raining outside, take an umbrella.   Choose between possible outcomes.  If you are taller than 38&amp;quot;, proceed to the ride, otherwise leave the line.</description>
+    </item>
+    
+    <item>
+      <title>05b: Epsilon Comparision</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/05b_epsilon_comparison/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/05b_epsilon_comparison/</guid>
+      <description>Epsilon Comparison CS2114 (Ch. 4) Supplement  Numerical Inaccuracy  Computers use binary (base-2) numbers internally.  Our base-10 numbers must be converted. Conversion for integers is 1-1 Conversion for Real numbers is not so simple&amp;hellip;     Irrational Numbers  Even in base-10, we have many numbers that are irrational (they are non-terminating and non-repeating decimals). You cannot represent these exactly with any finite number of digits.  Examples: $\pi$, $e$   Some numbers that can be expressed precisely in base-10 cannot be expressed precisely in binary:  Examples: $0.</description>
+    </item>
+    
+    <item>
+      <title>06: Repetition</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/06_repetition/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/06_repetition/</guid>
+      <description>Repetition CS2114 (Ch. 5)  First, some helpful new operators&amp;hellip;  Shortcut Assignment Operators  Make modifying an existing value easy.   Increment and Decrement Operators  Make counting up and down easy.     Shortcut Assignment Operators
+A more general set of shortcut operators are provided for modifying a variable by applying one of the 5 basic mathematical operations.
+ Increment and Decrement Operators
+To make it even easier to add or subtract one from a variable, C++ offers a set of two increment (add one) and two decrement (subtract one) operators:</description>
+    </item>
+    
+    <item>
+      <title>07: Functions and Value Parameters</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/07_functions_value_parameters/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/07_functions_value_parameters/</guid>
+      <description>Functions and Value Parameters CS2114 (Ch. 6)  Modular Programming   Modular programming refers to the practice of designing a program so that it is broken up into small, manageable pieces called functions or modules.
+  In C++, a function is a collection of related statements that perform a single logical task.
+  In Object-Oriented programming, a function may also be referred to as a method. For example, in cin.</description>
+    </item>
+    
+    <item>
+      <title>08: Functions and Reference Parameters</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/08_functions_reference_parameters/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/08_functions_reference_parameters/</guid>
+      <description>Functions &amp;amp; Reference Parameters CS2114 (Ch. 6)  Review: Pass by Value  In pass by value, the value of the actual parameter is copied into the formal parameter. Pass by value is the default method by which data is moved into a function for primitive types, structured types and object types.  Changes to the formal parameter cannot affect the actual parameter.     Pass by Reference  In pass by reference, no copy is made.</description>
+    </item>
+    
+    <item>
+      <title>09: Arrays</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/09_arrays/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/09_arrays/</guid>
+      <description>Arrays CS2114 (Ch. 7)  The C++ Array Arrays allow programmers to store multiple related values of the same type.
+ Values are stored sequentially in memory. Declaration syntax: type arrayname[size_declarator];  Example Declarations
+int a[100]; // Declares an array of 100 integers. double b[50]; // Declares an array of 50 doubles.  Array Memory Layout The declaration:
+int tests[5]; allocates the following memory:
+ Arrays are a reference type.  The array variable does not refer to the array as a whole, only to the location of the first element.</description>
+    </item>
+    
+    <item>
+      <title>09b: Parallel and Multi-Dimensional Arrays</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/09b_parallel_and_multi_dim_arrays/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/09b_parallel_and_multi_dim_arrays/</guid>
+      <description>Parallel &amp;amp;Multi-DimensionalArrays CS2114 (Ch. 7)  Parallel Arrays  Parallel Arrays: Two or more arrays containing related data such that the elements at corresponding indexes are related.  All elements at index i the parallel arrays make up a single record i.    Example
+const int N_CONTESTANTS = 5; std::string names[N_CONTESTANTS]; int votes[N_CONTESTANTS]; // Each contestant has a name and a vote count. for(int i = 0; i &amp;lt; N_CONTESTANTS; i++){ std::cout &amp;lt;&amp;lt; &amp;#34;Contestant &amp;#34; &amp;lt;&amp;lt; (i+1) &amp;lt;&amp;lt; &amp;#34; name: &amp;#34;; std::cin &amp;gt;&amp;gt; names[i]; std::cout &amp;lt;&amp;lt; &amp;#34;# of votes for &amp;#34; &amp;lt;&amp;lt; names[i] &amp;lt;&amp;lt; &amp;#34;: &amp;#34;; std::cin &amp;gt;&amp;gt; votes[i]; }  Parallel Arrays  Since the parallel arrays are separate, they may be of mixed type.</description>
+    </item>
+    
+    <item>
+      <title>10: Searching and Sorting</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/10_searching_sorting/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/10_searching_sorting/</guid>
+      <description>Search &amp;amp;SortAlgorithms CS2114 (Chapter 8)  Search Problem: Given an array filled with data, you want to determine if a particular value is in the array.
+ Is the value present? If so, where is it located?  Does this array contain the value 85? If so, where?
+What about 72?
+ Linear Search Linear search is a simple, brute-force approach:
+To find a value V in array A:
+ Linear Search Discussion  Advantages  Simple to understand Always finds the target value (if it is present) Places no requirement on the ordering of the array   Disadvantage  Slow  Best, average, worst performance?</description>
+    </item>
+    
+    <item>
+      <title>10: Vectors</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/10_vector/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/10_vector/</guid>
+      <description>STL and std::vector (Ch. 16.5)  background-image: url(../images/STL/circle_template.jpg)
+STL The C++ Standard Template Library  The Standard Template Library  What is STL? Why use STL? Overview of STL Features and Concepts Containers Iterators Algorithms References for more information on STL   What is STL?  &amp;ldquo;The Standard Template Library provides a set of well structured generic C++ components that work together in a seamless way.&amp;rdquo;
+- Alexander Stepanov &amp;amp; Meng Lee,</description>
+    </item>
+    
+    <item>
+      <title>11: C-Style Strings</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/11_c-strings/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/11_c-strings/</guid>
+      <description>Characters &amp;amp;C-Style Strings CS2114 (Ch. 10)  ASCII Encoding Internally, all characters must be encoded into a numeric representation.
+There is more than one way to do it&amp;hellip; But C++ (by default) type char uses the ASCII encoding scheme.
+ background-image: url(../images/shared/ascii_table.svg)
+ Testing Characters The following functions require the &amp;lt;cctype&amp;gt; header.
+![Character testing functions.]../imagesc_strings/char_testing.png)
+ Case Conversion Also require the &amp;lt;cctype&amp;gt; header.
+Functions:
+ toupper(char c): if c is a lowercase letter, return uppercase equivalent; otherwise, return c unchanged.</description>
+    </item>
+    
+    <item>
+      <title>11: Data Processing</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/11_data_processing/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/11_data_processing/</guid>
+      <description>Data Processing Featuring: STL Algorithms  Algorithms STL contains algorithms implemented as function templates.
+  Designed to perform operations on containers.
+  Requires algorithm header file #include &amp;lt;algorithm&amp;gt;
+  Includes:
+ accumulate() max() binary_search() max_element() copy() min() count() min_element() fill() reverse() find() sort() is_sorted() swap() ... and many more ...     Algorithms Overview  Algorithms use iterators for operating on ranges of values in a container.</description>
+    </item>
+    
+    <item>
+      <title>12: Pointers</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/12_pointers/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/12_pointers/</guid>
+      <description>Pointers CS2114 (Ch. 9)  Addresses and Data Every variable in a program is stored at a unique memory address.
+The unary &amp;amp; is the address operator; the address operator retrieves the address of its operand:
+int x = 42; // Print out the address at which x is stored: std::cout &amp;lt;&amp;lt; &amp;amp;x &amp;lt;&amp;lt; &amp;#34;\n&amp;#34;;  Pointers  A pointer is a variable that stores a memory address.  Declare by adding the pointer type modifier (  *  ) to a variable declaration.</description>
+    </item>
+    
+    <item>
+      <title>13: Dynamic Memory</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/13_dynamic_memory/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/13_dynamic_memory/</guid>
+      <description>Dynamic MemoryAllocation CS2114 (Ch. 9.8)  Creating Memory at Runtime New memory can be allocated for individual data values or arrays at runtime.
+ new operator allocates new memory.  returns a pointer to the allocated space. Places responsibility on the programmer to &amp;ldquo;clean up&amp;rdquo; the memory later.   delete operator de-allocates memory that was allocated with new.  Failure to de-allocate memory creates a memory leak.    Both operators come in two forms; one for a single data item and one for an array.</description>
+    </item>
+    
+    <item>
+      <title>15: Structures</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/15_structures/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/15_structures/</guid>
+      <description>Abstract Data Types Chapter 11  Abstract Data Types When a built-in data type just isn’t enough&amp;hellip;
+ Abstract Data Types are user-defined. Can represent new &amp;ldquo;things&amp;rdquo; from the real world better than built-in types. Essentially &amp;ldquo;extend&amp;rdquo; the language. Three mechanisms for creating ADTs in C++:  enum struct class     enum Enumerated Type
+ Allows the programmer to specify mnemonic literals. Low-level, not very flexible. Example:  enum WorkDayAbr = {MON, TUE, WED, THR, FRI}; //.</description>
+    </item>
+    
+    <item>
+      <title>16: Header Files</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/16_header_files/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/16_header_files/</guid>
+      <description>C++ Header Files  Header Files In C++, header files are used to contain re-usable code, preventing the programmer from having to manually copy/paste the code into multiple programs.
+ Make the pre-processor do the work! Typically end with a .h extension. Contain source code that is not intended for compilation.   Header Files  Header files are just regular C++ source code files. Typically contain function/class/structure definitions. Included in other source files by using the #include directive.</description>
+    </item>
+    
+    <item>
+      <title>17: Operator Overloading</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/17_operator_overloading/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/17_operator_overloading/</guid>
+      <description>OperatorOverloading CS2114  Operators as Functions Operators in C++ are actually just symbolic shorthand for function calls.
+Example Expression:
+area = pi * r * r; Consider just the first operator that will be applied:
+pi * r This expression will actually result in the following function call:
+operator* (pi, r) The entire expression could be written as:
+operator= ( operator*( operator*( pi, r ), r ));  Overloading Operators Since operators are really just function calls in disguise, if we know the right prototypes for the function calls, we can overload them.</description>
+    </item>
+    
+    <item>
+      <title>18: Function Templates</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/18_templates/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/18_templates/</guid>
+      <description>Function Templates Ch. 16.2-16.4  Function Templates  Function templates allow us to practice generic programming in C++.  Many algorithms do not depend on the type of data being operated on. Why should we be forced to overload these functions for every new type of data?     Function Templates  Function templates provide a pattern for a function that can work with many types of data. When written, the data type specifiers are replaced with type parameters.</description>
+    </item>
+    
+    <item>
       <title>Supplement: Streams</title>
       <link>https://jcausey-astate.github.io/CS2114_lecture_notes/supplement_streams/</link>
       <pubDate>Sun, 04 Oct 2020 16:30:22 -0500</pubDate>

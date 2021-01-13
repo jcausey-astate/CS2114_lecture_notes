@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="icon" type="image/vnd.microsoft.icon" sizes="32x32" href="https://jcausey-astate.github.io/CS2114_lecture_notes/favicon.ico">
+	<link rel="stylesheet" href="https://jcausey-astate.github.io/CS2114_lecture_notes/css/remark.css" />
+	<link rel="stylesheet" href="https://jcausey-astate.github.io/CS2114_lecture_notes/css/prog-courses.css" />
+
+</head>
+
+
+<body>
+    <textarea id="source" class="three-col">
+
+
+# C&#43;&#43; Header Files
+
+
+---
+
+## Header Files
+
+In C&#43;&#43;, _header files_ are used to contain re-usable code, preventing the programmer from having to manually copy/paste the code into multiple programs.
+
+- Make the pre-processor do the work!
+- Typically end with a _`.h`_ extension.
+- Contain source code that is not intended for compilation.
+
+
+---
+
+## Header Files
+
+- Header files are just regular C&#43;&#43; source code files.
+- Typically contain function/class/structure definitions.
+- Included in other source files by using the `#include` directive.
+    - Think &#34;copy-and-paste&#34;, but the _pre-processor_ does the work.
+    
+
+---
+
+## Include Guards
+
+- Header files may be `#included` by multiple source files in a single project.
+    &#43; This would lead to multiple definitions of the same functions/classes/structures.
+        &#43; _Multiple definitions are illegal in C&#43;&#43;_
+- _Include Guards_ are used to prevent the body of the header file from being included multiple times.
+
+
+---
+
+
+## Include Guards
+
+```cpp
+#ifndef HEADER_NAME_H
+#define HEADER_NAME_H
+
+// [ ... ] C&#43;&#43; source code goes here...
+
+#endif
+```
+
+- The include guards shown above would be in a header file called _`header_name.h`_.
+    &#43; It is convention to use CAPS for the file name, and replace the &#34;dot&#34; with an underscore.
+- The pre-processor will only perform the copy/paste the _first time_ the file is included.
+    &#43; This happens since the global name `HEADER_NAME_H` hasn&#39;t been defined yet at that point.
+
+
+---
+
+## Header File Example
+
+```cpp
+/**
+ * @file array_functions.h
+ *
+ * TODO: file-level header info should be placed
+ *       here (see Grading Guidelines)
+ */
+#ifndef ARRAY_FUNCTIONS_H
+#define ARRAY_FUNCTIONS_H
+
+#include &lt;iostream&gt;
+
+// TODO: function comment header goes here!
+void print_array(double a[], int size){
+    for(int i = 0; i &lt; size; i&#43;&#43;){
+        std::cout &lt;&lt; a[i] &lt;&lt; &#34;\n&#34;;
+    }
+}
+
+#endif
+```
+
+---
+
+## Header File Location
+
+There are actually two versions of the familiar `#include` directive:
+
+- `#include &lt; header_name &gt;`
+    &#43; Pre-processor looks for _`header_name`_ in the _standard system include directories_.
+- `#include &#34;path/to/header_file.h&#34;`
+    &#43; Full path name is used to directly access the file.
+    &#43; If only file name is provided, it should be placed in the same directory as the _`.cpp`_ file.
+
+
+</textarea>
+    <script src="https://jcausey-astate.github.io/CS2114_lecture_notes/js/remark-latest.min.js"></script>
+<script src='https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML' type="text/javascript"></script>
+<script>
+	var slideshow = remark.create();
+
+	
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']],
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+		}
+	});
+	MathJax.Hub.Queue(function () {
+		$(MathJax.Hub.getAllJax()).map(function (index, elem) {
+			return (elem.SourceElement());
+		}).parent().addClass('has-jax');
+	});
+
+	MathJax.Hub.Configured();
+</script>
+</body>
+
+</html>

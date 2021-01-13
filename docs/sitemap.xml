@@ -3,6 +3,121 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/00_why_cpp/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/01_sp_basics/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/02_variables_operators_errors/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/03_input_and_output/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/04_formatted_output_getline_cmath/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/14_recursion/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/05_selection/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/05b_epsilon_comparison/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/06_repetition/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/07_functions_value_parameters/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/08_functions_reference_parameters/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/09_arrays/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/09b_parallel_and_multi_dim_arrays/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/10_searching_sorting/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/10_vector/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/11_c-strings/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/11_data_processing/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/12_pointers/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/13_dynamic_memory/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/15_structures/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/16_header_files/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/17_operator_overloading/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/18_templates/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/supplement_streams/</loc>
     <lastmod>2020-10-04T16:30:22-05:00</lastmod>
   </url>

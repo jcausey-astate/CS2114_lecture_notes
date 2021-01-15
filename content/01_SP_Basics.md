@@ -201,6 +201,8 @@ int main()
 * `"Hello, World!\n"` is a _string literal_; a _string_ is just a collection of characters that are treated as a single unit.
     - String literals are always surrounded by double-quotes.
 
+* **_literal_**: A literal is a value that is typed directly into the source code, in a representation that the programming language recognizes as a value of a recognized type.  Literal values must be formatted according to the syntax rules of the language.
+
 ---
 ## Escape Characters
 

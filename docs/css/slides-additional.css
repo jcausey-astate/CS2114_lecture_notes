@@ -27,12 +27,14 @@ article {
 }
 
 article.slide-listing {
-    color: orange;
+    color: cornflowerblue;
     text-decoration: none;
+    font-size: 30pt;
 }
 
 article.slide-listing a, a:visited, a:hover  {
-    color: orange;
+    color: cornflowerblue;
+;
     text-decoration: none;
 }
 

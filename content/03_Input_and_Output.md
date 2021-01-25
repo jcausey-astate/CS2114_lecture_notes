@@ -162,6 +162,12 @@ std::ifstream fin("my_input_file.txt");
 ```cpp
 std::fstream fp;
 ```
+
+---
+
+```cpp
+std::fstream fp;
+```
 Now you can open for input:
 ``` cpp
 fp.open("my_file.txt", std::ios::in); // open for input

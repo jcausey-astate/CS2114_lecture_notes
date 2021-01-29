@@ -28,11 +28,6 @@
   </url>
   
   <url>
-    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/14_recursion/</loc>
-    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/05_selection/</loc>
     <lastmod>2021-01-13T12:00:00-05:00</lastmod>
   </url>
@@ -94,6 +89,11 @@
   
   <url>
     <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/13_dynamic_memory/</loc>
+    <lastmod>2021-01-13T12:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jcausey-astate.github.io/CS2114_lecture_notes/14_recursion/</loc>
     <lastmod>2021-01-13T12:00:00-05:00</lastmod>
   </url>
   

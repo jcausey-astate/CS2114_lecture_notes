@@ -58,17 +58,6 @@ Source: http://www.tiobe.com/tiobe-index/
     </item>
     
     <item>
-      <title>04: Recursion</title>
-      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/14_recursion/</link>
-      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
-      
-      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/14_recursion/</guid>
-      <description>Recursion CS2114 (Ch. 6 &amp;amp; 19)  Recursion A function is said to be recursive if it contains a call to itself.
- Recursive definitions are often more &amp;ldquo;natural&amp;rdquo;.  Embodies a &amp;ldquo;divide-and-conquer&amp;rdquo; strategy    void countDown(int timer) { if (timer == 0) { std::cout &amp;lt;&amp;lt; &amp;#34;Blastoff!&amp;#34;; } else{ std::cout &amp;lt;&amp;lt; timer &amp;lt;&amp;lt; &amp;#34;...\n&amp;#34;; countDown(timer-1); // recursive call  } }  Tracing a Recursive Call
- Purpose  Recursion is an alternative way to achieve repetition.</description>
-    </item>
-    
-    <item>
       <title>05: Selection</title>
       <link>https://jcausey-astate.github.io/CS2114_lecture_notes/05_selection/</link>
       <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
@@ -215,6 +204,17 @@ int x = 42; // Print out the address at which x is stored: std::cout &amp;lt;&am
       <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/13_dynamic_memory/</guid>
       <description>Dynamic MemoryAllocation CS2114 (Ch. 9.8)  Creating Memory at Runtime New memory can be allocated for individual data values or arrays at runtime.
  new operator allocates new memory.  returns a pointer to the allocated space. Places responsibility on the programmer to &amp;ldquo;clean up&amp;rdquo; the memory later.   delete operator de-allocates memory that was allocated with new.  Failure to de-allocate memory creates a memory leak.    Both operators come in two forms; one for a single data item and one for an array.</description>
+    </item>
+    
+    <item>
+      <title>14: Recursion</title>
+      <link>https://jcausey-astate.github.io/CS2114_lecture_notes/14_recursion/</link>
+      <pubDate>Wed, 13 Jan 2021 12:00:00 -0500</pubDate>
+      
+      <guid>https://jcausey-astate.github.io/CS2114_lecture_notes/14_recursion/</guid>
+      <description>Recursion CS2114 (Ch. 6 &amp;amp; 19)  Recursion A function is said to be recursive if it contains a call to itself.
+ Recursive definitions are often more &amp;ldquo;natural&amp;rdquo;.  Embodies a &amp;ldquo;divide-and-conquer&amp;rdquo; strategy    void countDown(int timer) { if (timer == 0) { std::cout &amp;lt;&amp;lt; &amp;#34;Blastoff!&amp;#34;; } else{ std::cout &amp;lt;&amp;lt; timer &amp;lt;&amp;lt; &amp;#34;...\n&amp;#34;; countDown(timer-1); // recursive call  } }  Tracing a Recursive Call
+ Purpose  Recursion is an alternative way to achieve repetition.</description>
     </item>
     
     <item>

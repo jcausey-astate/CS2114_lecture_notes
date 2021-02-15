@@ -241,11 +241,11 @@ _or more generally:_
 
 **Example**
 
-The following example shows the range-based `for` loop being used to print the value of all elements of an array of integers to the screen.  **Don't worry** that we haven't introduced _arrays_ yet &mdash; we will revisit this topic.
+The following example shows the range-based `for` loop being used to print the value of all elements of an vector of integers to the screen.  **Don't worry** that we haven't introduced _vectors_ yet &mdash; we will revisit this topic.
 
 ```cpp
 // Create some values in a collection:
-int values[5] = {2, 4, 6, 8, 10};
+std::vector<int> values{ 2, 4, 6, 8, 10 };
 // Print them to standard output using the 
 // range-based `for`:
 for( int item : values ) {
